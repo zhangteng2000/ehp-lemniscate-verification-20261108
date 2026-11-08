@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.exe
+*.dll
+*.bin
+*.log
+*.tex
+*.pdf
+*.zip
+verification/low_replays/
+

@@ -1,0 +1,8 @@
+{
+  "n0": 256,
+  "alternate_binomial_bound": "1/2",
+  "beta_upper_display": 0.24756653792667083,
+  "matching_constant_gt": "913/1000",
+  "oscillation_fraction_gt": "9/25",
+  "source_geometry": true
+}

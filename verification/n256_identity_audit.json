@@ -1,0 +1,10 @@
+{
+  "finite_difference_degrees": [
+    3,
+    9,
+    19,
+    32
+  ],
+  "inverse_differentiation": "passed",
+  "signed_curvature_constants": "passed"
+}

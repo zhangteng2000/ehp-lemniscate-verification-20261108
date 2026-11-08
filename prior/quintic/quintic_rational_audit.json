@@ -1,0 +1,6 @@
+{
+  "min_chord_margin_gt": "3/1000",
+  "small_curvature_loss_lt": "105/100",
+  "interval_count": 13,
+  "gamma_evaluation": "rational split beta series"
+}

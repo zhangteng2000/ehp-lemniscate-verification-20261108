@@ -1,0 +1,50 @@
+{
+  "kind": "B",
+  "complete": true,
+  "stages": [
+    {
+      "stage": 0,
+      "mesh": [
+        8,
+        16,
+        32,
+        256,
+        128
+      ],
+      "input_count": 4096,
+      "unresolved": 3173,
+      "least_passing_cell_count": 8693,
+      "counts_sha256": "79479b981ad7257149e873190b4e319e74b137c1f20acd8e3d0c603ea839f835"
+    },
+    {
+      "stage": 1,
+      "mesh": [
+        16,
+        32,
+        64,
+        512,
+        256
+      ],
+      "input_count": 25384,
+      "unresolved": 28,
+      "least_passing_cell_count": 34784,
+      "counts_sha256": "855d1d8efb46d946253a7271e9992119596208df314876b6533efb220c71c8e0"
+    },
+    {
+      "stage": 2,
+      "mesh": [
+        32,
+        64,
+        128,
+        512,
+        256
+      ],
+      "input_count": 224,
+      "unresolved": 0,
+      "least_passing_cell_count": 36625,
+      "counts_sha256": "54df28cdf5a6a3ed795cbafcd4cc2931d0e7da7c1a8019314b663b2b637bb48d"
+    }
+  ],
+  "source_sha256": "ef8d9b748dd9094e76cbceaed62a99c48f12098624a1c5b1a4256d80bfefe78c",
+  "trig_sha256": "03116f3d914f13fa30c526d6175454697e21e5557e43dd7f56d2ba9dde6a95b1"
+}

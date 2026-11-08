@@ -1,0 +1,4 @@
+{
+  "combined_error_lt": "2^-28",
+  "guard": "2^-25"
+}

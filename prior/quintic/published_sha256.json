@@ -1,0 +1,13 @@
+{
+  "replay_general_quintic.py": "00ece92d8f9913e41819db3ac132f2a525a2325ddfa1f7c6fc5872120f6780e0",
+  "QuinticPhaseGrid.cs": "ef8d9b748dd9094e76cbceaed62a99c48f12098624a1c5b1a4256d80bfefe78c",
+  "QuinticPhaseAudit.cs": "e91bf8f97cb0d16eb798907308767ac977abb57c67068b258ee74c1f68525b46",
+  "quintic_universal_certificate.py": "5ef6f882a34dbf37a2d3488da8af8b8302bf025c44697a290f8cbdc7fa49cbc9",
+  "audit_quintic_phase_tree.py": "015be80244ca7f5c5fc2760113a4a7f45faf6e253bf24dcdaec66bd0e682aa4a",
+  "audit_quintic_identities.py": "57f1cee470e7f65d73a7760201ae157197035c8fe22d4e9b26050aa1baf602b7",
+  "audit_phase_roundoff.py": "583eb8fd7901728feb887daeb443579964897efc7e6613c063a8286661f6c8c3",
+  "audit_quintic_rational.py": "c1fc036c8392bc7535f9c797c609eed52592d435f2bfee9c53034508292bd183",
+  "quintic_shape_integer_cover.py": "344e7e880d51769d457900522b69679dbe6b92d8689f91ca87f8129235c4b87b",
+  "independent_quintic_shapes.py": "2b3ffaba83fb4b5fdbc12a3471a3f6debca19a496296487f435d54412fd826e9",
+  "quintic_sine_dyadic.txt": "03116f3d914f13fa30c526d6175454697e21e5557e43dd7f56d2ba9dde6a95b1"
+}

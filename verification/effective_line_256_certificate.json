@@ -1,0 +1,21 @@
+{
+  "N": 256,
+  "k": "ceil(2 sqrt(n))",
+  "curvature_source": "all_degree_diagonal_curvature.txt",
+  "derivative_error_lt": "423/1000 times R",
+  "root_radius_lt": "577/1000",
+  "root_sum_lt": "229/100",
+  "W_lt": "46/5",
+  "beta_remainder_lt": "1/2",
+  "beta_upper_display": 0.2729590328947493,
+  "beta_parts_display": [
+    0.24606154829705082,
+    0.02689748459768423,
+    1.4289665088452072e-14
+  ],
+  "oscillation_fraction_gt": "9/25",
+  "bl_factor_display": 0.018211478279914983,
+  "outer_Rouche_ratio_display": 8.923037791411135e-30,
+  "critical_value_radius_lt": "1/4",
+  "value_bound_display": 0.0009913179229995303
+}

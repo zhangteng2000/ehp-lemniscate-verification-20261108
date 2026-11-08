@@ -1,0 +1,18 @@
+{
+  "certificate_sha256": "964241c49502d2d7c26dad063cca2edf679fb1d0ac64a61379fe0fc70b1059d9",
+  "different_direction_sums": 8930,
+  "different_target_modes": 0,
+  "elapsed_seconds": 434.5320000000065,
+  "min_table_coordinate_margin": "899883551/7902739824640",
+  "mode": "independent",
+  "nodes": {
+    "clipped": 4211,
+    "full": 16598,
+    "internal": 21231,
+    "outside": 646,
+    "positive": 20809,
+    "tiles": 224
+  },
+  "precision_bits": 150,
+  "status": "PASS"
+}

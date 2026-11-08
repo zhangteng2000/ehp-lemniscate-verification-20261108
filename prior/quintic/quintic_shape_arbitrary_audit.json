@@ -1,0 +1,97 @@
+{
+  "ca": "7/4",
+  "cb": "5/2",
+  "history": [
+    {
+      "level": 0,
+      "counts": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "classification_sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+    },
+    {
+      "level": 1,
+      "counts": [
+        16,
+        0,
+        0,
+        0
+      ],
+      "classification_sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+    },
+    {
+      "level": 2,
+      "counts": [
+        135,
+        121,
+        0,
+        0
+      ],
+      "classification_sha256": "d43135209fdcbb38be2c501818fde1eeb0917032ee55676adaa10dcbef46954c"
+    },
+    {
+      "level": 3,
+      "counts": [
+        1043,
+        1114,
+        1,
+        2
+      ],
+      "classification_sha256": "ca9ad3df8f3837cccbc97edabc6a8968aebc390bb5b56b56a192a151815fe8db"
+    },
+    {
+      "level": 4,
+      "counts": [
+        5095,
+        9103,
+        857,
+        1633
+      ],
+      "classification_sha256": "e758e9d66ce716547ea33b2326743044fbaf7be2d6e055cfc6bd5846ca83044a"
+    },
+    {
+      "level": 5,
+      "counts": [
+        3475,
+        61135,
+        5682,
+        11228
+      ],
+      "classification_sha256": "09d8250decbe404d58c137b47a812a1483d32f0c5d683e4d320f9629e8a498ed"
+    },
+    {
+      "level": 6,
+      "counts": [
+        1217,
+        45398,
+        5928,
+        3057
+      ],
+      "classification_sha256": "79981751a181140c28d3f6a4e2afb2e96d776ab824f4a25bc2d95a95a829b2fd"
+    },
+    {
+      "level": 7,
+      "counts": [
+        316,
+        16054,
+        1738,
+        1364
+      ],
+      "classification_sha256": "17caecd3338d2dec7522d3f0866dcac6d84eed0299af051fceefb4c415255cc5"
+    },
+    {
+      "level": 8,
+      "counts": [
+        0,
+        4562,
+        388,
+        106
+      ],
+      "classification_sha256": "b162004a27713cf28f1366bb8e1bbd78b4c55dfadb69a3f966911f1fa7dec735"
+    }
+  ],
+  "residual_count": 0
+}
