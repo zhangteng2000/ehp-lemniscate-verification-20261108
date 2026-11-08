@@ -1,4 +1,8 @@
 """Second exact evaluation of each terminal shape's coefficient and Crofton implications."""
+
+if not __debug__:
+    raise RuntimeError('Verification requires assertions: do not run Python with -O or -OO.')
+
 from fractions import Fraction as Q
 from functools import lru_cache
 from pathlib import Path

@@ -1,0 +1,7 @@
+{
+  "cubic_discriminant": "exact polynomial identity modulo X^2+Y^2=1",
+  "exterior_coefficient_checks": 240,
+  "model_numerator_divisibility": "all m=1,...,8, three rational exponents",
+  "pair_beta_coefficient_checks": 45,
+  "scope": "algebraic checks only; does not certify any parameter coverage"
+}

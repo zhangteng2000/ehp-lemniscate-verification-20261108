@@ -1,0 +1,9 @@
+{
+  "status": "elementary rational bounds passed",
+  "small_bound": "4540981/9175040",
+  "middle_bound": "968017/1949696",
+  "large_bound": "925/1792",
+  "majorant_upper": "925/1792",
+  "required_upper": "53/100",
+  "parameter_boxes": 0
+}

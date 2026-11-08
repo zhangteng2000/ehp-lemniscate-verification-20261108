@@ -1,0 +1,648 @@
+{
+  "scope": "A claim-by-claim mathematical and dependency audit; not a formal proof-assistant verification.",
+  "statement_count": 50,
+  "claims": [
+    {
+      "ordinal": 1,
+      "label": "thm:effective256",
+      "type": "assembly",
+      "review": "Every positive degree is covered; the strict deformation treats arbitrary maximizers, and every monic linear polynomial fits the stated equality family. The constants use the corrected beta normalization.",
+      "mathematical_dependencies": [
+        "lem:extremizers",
+        "lem:critical-compactness",
+        "lem:cubic-literature",
+        "thm:line256",
+        "prop:uniform-circle-transfer",
+        "prop:finite-line",
+        "prop:collinear-finite",
+        "prop:conditional-line",
+        "prop:octic-line",
+        "prop:last-line",
+        "prop:new-five-line",
+        "prop:small-circle-transfer",
+        "prop:quartic-boundary-gap",
+        "lem:new-strict-levi"
+      ],
+      "literature_simplification_review": "The reviewed sources cover n=1, n=2, cubic polynomials, or sufficiently large degree. None supplies the stated general theorem, so the finite/general bridge and equality variation are retained."
+    },
+    {
+      "ordinal": 2,
+      "label": "lem:extremizers",
+      "type": "literature",
+      "review": "EH corrected preprint Lemmas 4--5, pages 3--7: continuity/existence and selection of a maximizing polynomial whose critical values are on the unit circle. This is a selection statement, not the assertion about every maximizer.",
+      "mathematical_dependencies": [],
+      "literature_simplification_review": "Replaced by the precisely stated cited result in the manuscript; version, page and normalization were checked in the source audit."
+    },
+    {
+      "ordinal": 3,
+      "label": "lem:local-model",
+      "type": "literature",
+      "review": "FN Section 6, pages 7--10: local comparison at the power model. Rotation transfers it to every unimodular constant. Used only to control the small exceptional boundary arcs in the mass argument.",
+      "mathematical_dependencies": [],
+      "literature_simplification_review": "Replaced by the precisely stated cited result in the manuscript; version, page and normalization were checked in the source audit."
+    },
+    {
+      "ordinal": 4,
+      "label": "lem:cubic-literature",
+      "type": "literature",
+      "review": "Dahlke Theorem 1.1 and Propositions 3.1/5.3, pages 2--4 and 8: the reduced cubic comparison is strict when its two boundary critical values differ. This replaces the older cubic computation.",
+      "mathematical_dependencies": [],
+      "literature_simplification_review": "Replaced by the precisely stated cited result in the manuscript; version, page and normalization were checked in the source audit."
+    },
+    {
+      "ordinal": 5,
+      "label": "lem:hypergeometric-connection",
+      "type": "literature",
+      "review": "DLMF 15.10.21 with A=B=(1+x)/2, C=1. The singular coefficient is 2^x B(1/2,x/2), and the other coefficient is 2pi Gamma(-x)/Gamma(b)^2; the remaining term is O((1-u)^(1-x)).",
+      "mathematical_dependencies": [],
+      "literature_simplification_review": "Replaced by the precisely stated cited result in the manuscript; version, page and normalization were checked in the source audit."
+    },
+    {
+      "ordinal": 6,
+      "label": "lem:critical-compactness",
+      "type": "analytic",
+      "review": "The maximal weighted coefficient normalization has a nonzero lower coefficient in the limit, while all limiting critical values are zero. The fibre multiplicity count forces a centered power and gives the contradiction. Closedness and repeated critical points are included.",
+      "mathematical_dependencies": [],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 7,
+      "label": "lem:area-theorem",
+      "type": "literature",
+      "review": "Duren Section 2.2, page 29: the exterior area theorem in leading-coefficient-one normalization. The coefficient of w^0 is immaterial.",
+      "mathematical_dependencies": [],
+      "literature_simplification_review": "Replaced by the precisely stated cited result in the manuscript; version, page and normalization were checked in the source audit."
+    },
+    {
+      "ordinal": 8,
+      "label": "lem:exterior-parseval",
+      "type": "literature",
+      "review": "KT Theorem 4, pages 535--536; passage to a critical level also follows from EH continuity and monotone coefficient sums. The weighted version uses a bounded exterior multiplier and visits each regular arc once.",
+      "mathematical_dependencies": [
+        "lem:extremizers"
+      ],
+      "literature_simplification_review": "Replaced by the precisely stated cited result in the manuscript; version, page and normalization were checked in the source audit."
+    },
+    {
+      "ordinal": 9,
+      "label": "lem:crofton-curve",
+      "type": "literature",
+      "review": "Dolzhenko Section 4, Lemma and equation (2), pages 245--249. Unoriented lines have the factor 1/2; generic-line counts suffice at endpoints and singularities.",
+      "mathematical_dependencies": [],
+      "literature_simplification_review": "Replaced by the precisely stated cited result in the manuscript; version, page and normalization were checked in the source audit."
+    },
+    {
+      "ordinal": 10,
+      "label": "lem:inverse-log-identity",
+      "type": "analytic",
+      "review": "The two resultant signs (-1)^(n-1) cancel, including even degrees. A cyclic product of inverse derivatives gives the logarithm coefficient. Nonlinear terms have weight n and use only a_j with j<=n-3. Exact symbolic checks cover the displayed low-degree expansions.",
+      "mathematical_dependencies": [],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 11,
+      "label": "lem:capacity-facts",
+      "type": "literature",
+      "review": "Saff Theorems 1.9 and 3.5, pages 172 and 185: transfinite diameter and the leading coefficient of an exterior map. The nondegenerate/simply connected assumptions are stated where the map is used.",
+      "mathematical_dependencies": [],
+      "literature_simplification_review": "Replaced by the precisely stated cited result in the manuscript; version, page and normalization were checked in the source audit."
+    },
+    {
+      "ordinal": 12,
+      "label": "lem:last-arc",
+      "type": "analytic",
+      "review": "Removing infinity leaves an unbranched cyclic n-sheeted cover. The lifted exterior germ is one-to-one; target translation first affects w^(1-n), so the first n-2 inverse coefficients agree with the normalized exterior map. Weighted homogeneity then bounds R_n by capacity.",
+      "mathematical_dependencies": [
+        "lem:capacity-facts",
+        "lem:area-theorem"
+      ],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 13,
+      "label": "lem:arc-capacity",
+      "type": "literature",
+      "review": "Ransford Table 5.1, page 135: capacity of a unit circular arc is sin(alpha/2). A direct exterior-map verification and the primary Kalmykov--Kovalev citation to that page are recorded in the source audit.",
+      "mathematical_dependencies": [],
+      "literature_simplification_review": "Replaced by the precisely stated cited result in the manuscript; version, page and normalization were checked in the source audit."
+    },
+    {
+      "ordinal": 14,
+      "label": "lem:new-crofton",
+      "type": "analytic",
+      "review": "FN inverse-line method with Dolzhenko normalization. Exterior inverse derivatives control the clipped tails uniformly and justify removal of clipping. An affine target height and repeated critical points do not change the generic-line formula.",
+      "mathematical_dependencies": [
+        "lem:crofton-curve"
+      ],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 15,
+      "label": "prop:new-mass",
+      "type": "analytic",
+      "review": "Polynomial division yields the holomorphic source/target lift. The leading coefficients of A_k are T(a,k); weighted Parseval makes the remainders nonnegative. The boundary limit has uniform O(R^-x) tails. The negative part is confined to arcs of width O(t), hence its integral is O(t^(1-x)). The regularized beta identity gives the universal gap bound.",
+      "mathematical_dependencies": [
+        "lem:critical-compactness",
+        "lem:exterior-parseval",
+        "lem:new-crofton",
+        "lem:crofton-curve",
+        "lem:local-model",
+        "lem:extremizers",
+        "lem:hypergeometric-connection"
+      ],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 16,
+      "label": "lem:exterior-coefficients",
+      "type": "analytic",
+      "review": "Substitute beta=u/w^n in the inverse identity. Only j=n and parameter order zero produce w^-n. Removing the leading norm in weighted Parseval gives the bound at every k. Summing exactly gives the complete moment I0-1, which replaces finite row truncations in degrees 9--27.",
+      "mathematical_dependencies": [
+        "prop:new-mass",
+        "lem:exterior-parseval"
+      ],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 17,
+      "label": "lem:curvature-general",
+      "type": "analytic",
+      "review": "Three parts are checked separately: the bounded target core as a Hilbert-space holomorphic motion, the motion of the two straight tails, and bending with the polynomial fixed. The first tail pair has the signed coefficient Im(h_n), not its absolute value. Symmetric row sums and an l2 linear tail bound control all other pairs; every series converges because s>1.",
+      "mathematical_dependencies": [
+        "prop:new-mass",
+        "lem:exterior-parseval"
+      ],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 18,
+      "label": "lem:small-nonlinear",
+      "type": "analytic",
+      "review": "R5 follows from the weighted two-variable area bound. The R6/R7 majorants are bounded by completing a square and explicit Taylor estimates; R8 is reduced to one real variable. The whole area ball is covered, without a critical-value sign assumption. Exact rational algebra is replayed in the three corresponding majorant auditors.",
+      "mathematical_dependencies": [
+        "lem:inverse-log-identity"
+      ],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 19,
+      "label": "lem:stationary-coefficients",
+      "type": "analytic",
+      "review": "Differentiating the normalized target-disc deformation in both real parameter directions gives integral A1 ds=0. In the exterior Hardy expansion, its constant -b h_n is orthogonal to sqrt(f prime), forcing an extra negative-mode norm b^2 |h_n|^2/H^2. These negative modes, the complete first Laurent row over all k, and the constant mode of A2 are distinct. The affine-flow identity gives the second constant coefficient exactly; audit_stationary_identity.py checks its finite algebra. The final derivation first reads gamma_2=s_b h_(2n)-b [beta]h_n(F_beta) from the common inverse identity, then uses two affine coefficient identities. An optional direct rational audit checks these identities in twelve examples; the arbitrary-degree derivation is analytic.",
+      "mathematical_dependencies": [
+        "prop:new-mass",
+        "lem:exterior-coefficients",
+        "lem:exterior-parseval"
+      ],
+      "literature_simplification_review": "The classical exterior Parseval formula is imported separately from Kuznetsova--Tkachev. The extra stationary orthogonality and second affine-flow coefficient are derived explicitly here."
+    },
+    {
+      "ordinal": 20,
+      "label": "prop:small-circle-transfer",
+      "type": "computation-assisted",
+      "review": "One implication now treats n5..8. The common signed curvature estimate handles delta<=2tau/(1+tau^2). On longer arcs the capacity bounds R_n, Cauchy bounds its first deformation coefficient, and two stationary coefficients give an explicit nonnegative mass. Two independent rational circuits certify complete bisection/trisection partitions, with an independent positive-series angular bound. No higher inverse-coefficient family or auxiliary rho grid remains.",
+      "mathematical_dependencies": [
+        "prop:new-mass",
+        "lem:curvature-general",
+        "lem:small-nonlinear",
+        "lem:stationary-coefficients",
+        "lem:inverse-log-identity",
+        "lem:last-arc",
+        "lem:arc-capacity",
+        "lem:exterior-parseval"
+      ],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 21,
+      "label": "lem:cubic-slice",
+      "type": "analytic",
+      "review": "The (n-3)-rd derivative of the real slice has discriminant -27D after X0^2+Y^2=1. A negative discriminant forces a missing pair by Rolle. The common Hessian bounds are obtained by explicit product frequencies and retain -120 v^4 in the height second derivative. A symbolic polynomial identity checks the discriminant.",
+      "mathematical_dependencies": [
+        "lem:new-crofton"
+      ],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 22,
+      "label": "lem:weighted-root-mean",
+      "type": "analytic",
+      "review": "The integrated triangle defect equals the angular Crofton mean. It is homogeneous and superadditive. Equal-weight pairs give c_* times distance; elliptic coordinates give the unequal-weight lower bound. The measure and pair functions are defined outside proofs before subsequent use. Tao Lemmas 7.1--7.2 are credited for the dispersion method.",
+      "mathematical_dependencies": [
+        "lem:new-crofton"
+      ],
+      "literature_simplification_review": "Tao Lemmas 7.1--7.2 give the dispersion method and qualitative comparability. They do not supply the exact whole-plane pair constant or the stated diameter coefficient. The direct quantitative calculation is retained."
+    },
+    {
+      "ordinal": 23,
+      "label": "lem:sampled-derivative",
+      "type": "analytic",
+      "review": "The incidence-area formula gives P_k and the Fourier expansion. The inner disk costs the positive maximum deviation, while the reflected exterior Fourier moment permits a contour shift with nonvanishing A. The two limiting moduli and the square-root bound give 95/117 and the stated tail constant.",
+      "mathematical_dependencies": [
+        "lem:new-crofton",
+        "lem:weighted-root-mean"
+      ],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 24,
+      "label": "lem:inverse-beta-moments",
+      "type": "analytic",
+      "review": "Integration by parts for the beta-prime density yields a positive recurrence for the centered moments of lambda inverse. The first half are bounded by a geometric recurrence; in the second half the binomial coefficient ratios decrease then increase, so only two endpoints remain. All scalar endpoint inequalities are rational and uniform for every n>=256. The product error is less than 1/25.",
+      "mathematical_dependencies": [],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 25,
+      "label": "thm:line256",
+      "type": "analytic",
+      "review": "All four steps are checked: derivative root caps; inverse-beta recovery of high terms using the positive centered-moment recurrence; a positive measure set of heights with many real zeros; Blaschke and symmetric-difference recovery of the low polynomial. Monotonicity reduces all numerical inequalities to n=256. The resulting critical-value disk contradicts diameter two.",
+      "mathematical_dependencies": [
+        "lem:sampled-derivative",
+        "lem:weighted-root-mean",
+        "lem:inverse-beta-moments"
+      ],
+      "literature_simplification_review": "Tao gives an effective sufficiently-large theorem without a printed numerical cutoff. That theorem cannot replace an explicit n>=256 argument with these constants."
+    },
+    {
+      "ordinal": 26,
+      "label": "thm:sharp-line-limit",
+      "type": "analytic",
+      "review": "The high derivative root products converge normally. The low polynomial is superexponentially small on every fixed disk. The two critical/root zero sets have the same Hausdorff limit including zero, so the derivative diameter tends to one. The explicit upper model has pair energy at most two by projection; the infimum is below its mean.",
+      "mathematical_dependencies": [
+        "thm:line256",
+        "lem:sampled-derivative",
+        "lem:weighted-root-mean"
+      ],
+      "literature_simplification_review": "The reviewed sources did not contain this critical-point-diameter limit. The proof specifies reuse of the constructions from the high-degree line proof, rather than just its conclusion."
+    },
+    {
+      "ordinal": 27,
+      "label": "lem:curvature256",
+      "type": "analytic",
+      "review": "The general curvature lemma is specialized with R=3 and b0=1/3. Beta splitting bounds the core, residue classes bound the straight tails, and geometric row sums bound the curved tails. The displayed constants hold for every n>=6 and every stated tau, not only a sampled endpoint.",
+      "mathematical_dependencies": [
+        "lem:curvature-general"
+      ],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 28,
+      "label": "prop:uniform-circle-transfer",
+      "type": "analytic",
+      "review": "New uniform argument for every n>=28. Two source-variation orders of the same inverse coefficient suffice. Monotonicity of sqrt(n) q^n and (128n^2)^(-1/n) leaves two scalar cases at n=28. Exact rational lower margins are 97/125 and 739/1000+3911/80000000. No degree-by-degree diameter cover remains.",
+      "mathematical_dependencies": [
+        "prop:new-mass",
+        "lem:curvature256",
+        "lem:exterior-coefficients",
+        "lem:exterior-parseval"
+      ],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 29,
+      "label": "lem:centered-pair",
+      "type": "analytic",
+      "review": "Elliptic coordinates and the Catalan expansion have nonnegative terms after symmetrization. The beta coefficients at fixed total degree dominate their equal-mass value. This proves the full mass dependence; it is not inferred from finite numerical samples.",
+      "mathematical_dependencies": [
+        "lem:weighted-root-mean"
+      ],
+      "literature_simplification_review": "The reviewed Tao pair-defect estimate is qualitative. The explicit mass-dependent constant here is derived directly, rather than attributed to that lemma."
+    },
+    {
+      "ordinal": 30,
+      "label": "lem:central-absolute",
+      "type": "analytic",
+      "review": "A concave functional minus a linear moment is minimized at an extreme point of the fixed-support barycenter polytope. There are at most three masses. Splitting a three-vector balance into pairs and Jensen for x^(-1/2) gives sqrt(3)/2, including degenerate edges by omitting zero weights.",
+      "mathematical_dependencies": [
+        "lem:centered-pair"
+      ],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 31,
+      "label": "lem:ordered-radii",
+      "type": "analytic",
+      "review": "Marked-root measures give every prefix bound. The explicit decreasing vector weakly majorizes the moduli; integrating positive-part sums gives all moments. Its length and last clipped entry are valid for m>=5.",
+      "mathematical_dependencies": [
+        "lem:central-absolute",
+        "lem:centered-pair"
+      ],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 32,
+      "label": "prop:finite-line",
+      "type": "computation-assisted",
+      "review": "Newton and symmetric-mean bounds control high coefficients. Markov/Fubini yields common good heights for all derivatives. Lagrange interpolation, the finite sine operator, and a product comparison give a critical-value disk. Both scalar implementations verify all integers 28--255 with the printed rational choices.",
+      "mathematical_dependencies": [
+        "lem:ordered-radii",
+        "lem:sampled-derivative"
+      ],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 33,
+      "label": "lem:peel-recursion",
+      "type": "analytic",
+      "review": "The selected largest root has modulus <=A. A fractional submeasure gives the remaining centered scale. Translation, a concave prefix envelope, reversed logarithmic power series and Maclaurin bounds each give a valid coefficient cap; their minimum is taken only after all bounds hold on the entire interval.",
+      "mathematical_dependencies": [
+        "lem:ordered-radii",
+        "lem:central-absolute",
+        "lem:centered-pair"
+      ],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 34,
+      "label": "lem:radial-descent",
+      "type": "analytic",
+      "review": "The sampled derivative inequality first bounds the energy by L+ER. Either the single-root inequality or evaluation at a hypothetical root of maximal modulus gives the radius test. Each summand is nonincreasing in that modulus. The update uses only previously obtained caps.",
+      "mathematical_dependencies": [
+        "lem:peel-recursion",
+        "lem:weighted-root-mean",
+        "lem:sampled-derivative"
+      ],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 35,
+      "label": "lem:companion-variance",
+      "type": "analytic",
+      "review": "The companion walk injection makes the diagonals coefficientwise ordered. The variance is a sum of nonnegative-coefficient off-diagonal products and squared diagonal differences, so coefficient disks are maximized at their negative real endpoints. This includes repeated eigenvalues.",
+      "mathematical_dependencies": [],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 36,
+      "label": "lem:collinear-gram",
+      "type": "analytic",
+      "review": "The rescaled critical polynomial has product of root moduli one. Its companion has only two exceptional singular values, giving the positive-log sum bound B/2. The mixed moment estimate and the conjugate-linear identity for collinear critical values yield the stated Gram restriction.",
+      "mathematical_dependencies": [],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 37,
+      "label": "prop:collinear-finite",
+      "type": "computation-assisted",
+      "review": "Descent caps are reconstructed before testing the linear coefficient split. For all degrees 15--27, the small-coefficient variance and large-coefficient Gram ratios are strictly below one. The independent implementation uses matrix powers and separate coefficient-series multiplication.",
+      "mathematical_dependencies": [
+        "lem:peel-recursion",
+        "lem:radial-descent",
+        "lem:companion-variance",
+        "lem:collinear-gram"
+      ],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 38,
+      "label": "lem:conditional-contour",
+      "type": "analytic",
+      "review": "Retaining the actual root radius sharpens the sampled-derivative discrepancy. The angular shift uses only interior values of negative powers, since Re A>1/2. Boundary zeros of B are handled by approaching the radius from below; no negative power is evaluated at a boundary root.",
+      "mathematical_dependencies": [
+        "lem:sampled-derivative"
+      ],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 39,
+      "label": "prop:conditional-line",
+      "type": "computation-assisted",
+      "review": "All radius intervals are retained or excluded by explicit whole-interval tests. Degrees 10--14 close by variance/Gram; degree nine uses the forward and reciprocal real-root moments. Both angular parameter covers and all rational contour inequalities are recomputed independently.",
+      "mathematical_dependencies": [
+        "lem:peel-recursion",
+        "lem:conditional-contour",
+        "lem:companion-variance",
+        "lem:collinear-gram"
+      ],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 40,
+      "label": "lem:nonic-chord-sign",
+      "type": "analytic",
+      "review": "The new R9 bound shares the quadratic area budget with the cubic and quartic terms. Completing an ellipse leaves one cubic positive by explicit quadratic Taylor bounds, yielding |R9|<15/16 on the entire area unit ball. The sign comes only from the critical-value sum; the affine inverse identity transfers it to p.",
+      "mathematical_dependencies": [
+        "lem:area-theorem",
+        "lem:inverse-log-identity"
+      ],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 41,
+      "label": "lem:octic-product",
+      "type": "analytic",
+      "review": "The arithmetic--geometric mean inequality for reciprocal real roots and Newton identities give the product restriction. Zero constant coefficient follows separately. Its normalized ratio is monotone in the absolute constant coefficient, as needed in the strip application.",
+      "mathematical_dependencies": [],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 42,
+      "label": "prop:octic-line",
+      "type": "computation-assisted",
+      "review": "The conditional descent caps and variance are checked independently. The complementary range uses a full-phase product-strip cover. The independent lower area exceeds 819/1000, with an explicit strict rational acceptance test.",
+      "mathematical_dependencies": [
+        "lem:conditional-contour",
+        "lem:peel-recursion",
+        "lem:companion-variance",
+        "lem:octic-product"
+      ],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 43,
+      "label": "lem:last-cubic-profile",
+      "type": "computation-assisted",
+      "review": "The A/B monomial parametrizations cover every nonzero pair. Phase symmetries are proved and both collision boundaries are closed. Every terminal box is counted by two evaluators with separate trig/error bounds; the complete parent-child reconstruction ends with an empty unresolved set.",
+      "mathematical_dependencies": [
+        "lem:cubic-slice"
+      ],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 44,
+      "label": "prop:last-line",
+      "type": "computation-assisted",
+      "review": "Upper and lower leading coefficient bounds constrain the radius descent. Variance handles small linear coefficients; three real-root moment inequalities and signed forward moments handle the rest. Paired heights contribute H1+H2 even when the successful side changes. All 128 scalar implications are recomputed.",
+      "mathematical_dependencies": [
+        "lem:last-cubic-profile",
+        "lem:conditional-contour",
+        "lem:peel-recursion",
+        "lem:companion-variance",
+        "lem:octic-product"
+      ],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 45,
+      "label": "prop:new-five-line",
+      "type": "computation-assisted",
+      "review": "The direction-independent cubic-slice area and the unrestricted collinear critical-point configuration inequality scale by the same source ratio. Their combination gives 17/16 at target diameter two without symmetry assumptions.",
+      "mathematical_dependencies": [
+        "lem:new-cubic",
+        "lem:new-shapes"
+      ],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 46,
+      "label": "lem:new-cubic",
+      "type": "computation-assisted",
+      "review": "The two homogeneous coefficient domains cover whichever normalized term dominates. Thirty-two-vertex Hessian interpolation certifies continuous boxes, with strict integer count thresholds. The separate factored evaluator replays every terminal leaf with a guard larger than its proved absolute error.",
+      "mathematical_dependencies": [
+        "lem:cubic-slice"
+      ],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 47,
+      "label": "lem:new-shapes",
+      "type": "computation-assisted",
+      "review": "A farthest source pair, ordering and conjugation give a complete closed four-real-dimensional box. Chord integrals and collinearity exclusions are exact. The primary rectangular and independent Gaussian-disk covers use different primitive evaluations and include repeated points and coincident critical values.",
+      "mathematical_dependencies": [],
+      "literature_simplification_review": "Compared against the retained Eremenko--Hayman, Fryntov--Nazarov, Kuznetsova--Tkachev and Tao results. No result with the exact quantitative conclusion and hypotheses was located in those sources; the specialized derivation or complete arithmetic cover is retained."
+    },
+    {
+      "ordinal": 48,
+      "label": "prop:quartic-boundary-gap",
+      "type": "analytic with scalar arithmetic",
+      "review": "The longest-chord line average, short-arc signed curvature, and a monotone middle-diameter function give a strict gap greater than d_p^(1/4)/32 for every positive boundary critical-value diameter. All positive constants and side conditions are checked twice.",
+      "mathematical_dependencies": [
+        "lem:quartic-line",
+        "prop:new-mass",
+        "lem:curvature-general",
+        "lem:area-theorem",
+        "lem:inverse-log-identity",
+        "lem:last-arc",
+        "lem:exterior-coefficients"
+      ],
+      "literature_simplification_review": "The reviewed working notes leave the regular quartic complement open. The present all-boundary quantitative estimate therefore retains its complete line cover and curvature argument."
+    },
+    {
+      "ordinal": 49,
+      "label": "lem:quartic-line",
+      "type": "computation-assisted",
+      "review": "The collinear quartic is reduced to four explicit radical branches over one closed interval; conjugation removes one branch. Both independently generated coefficient covers and two discriminant circuits certify all 384 intervals, including the triple parameter collision. The strict line constant is 29/20.",
+      "mathematical_dependencies": [
+        "lem:cubic-slice"
+      ],
+      "literature_simplification_review": "Plasma AI L179 is a much coarser line bound, while L181 covers collision families. Those results do not replace a sharp uniform bound on all collinear quartic critical-value configurations."
+    },
+    {
+      "ordinal": 50,
+      "label": "lem:new-strict-levi",
+      "type": "analytic",
+      "review": "The remainder deformation fixes every boundary critical value and preserves multiplicity. Its fixed-target source vector field is holomorphic across those critical points. The mixed length derivative is an integral of |V prime|^2/4 and is strictly positive whenever any critical value is off the circle. This transfers the selected equality cases to every maximizer.",
+      "mathematical_dependencies": [
+        "lem:critical-compactness"
+      ],
+      "literature_simplification_review": "Eremenko--Hayman Lemma 5 selects one boundary-critical maximizer. It does not directly prove the all-maximizer assertion needed for equality; the strict polynomial variation is retained."
+    }
+  ],
+  "tex_sha256": "c41c44c6ce68aa5601605cdadf879d3d47d8f17b2d5e16c26f06b21c89dc05b7",
+  "dependency_audit": {
+    "acyclic": true,
+    "topological_order": [
+      "lem:extremizers",
+      "lem:critical-compactness",
+      "lem:cubic-literature",
+      "lem:crofton-curve",
+      "lem:new-crofton",
+      "lem:weighted-root-mean",
+      "lem:sampled-derivative",
+      "lem:inverse-beta-moments",
+      "thm:line256",
+      "lem:exterior-parseval",
+      "lem:local-model",
+      "lem:hypergeometric-connection",
+      "prop:new-mass",
+      "lem:curvature-general",
+      "lem:curvature256",
+      "lem:exterior-coefficients",
+      "prop:uniform-circle-transfer",
+      "lem:centered-pair",
+      "lem:central-absolute",
+      "lem:ordered-radii",
+      "prop:finite-line",
+      "lem:peel-recursion",
+      "lem:radial-descent",
+      "lem:companion-variance",
+      "lem:collinear-gram",
+      "prop:collinear-finite",
+      "lem:conditional-contour",
+      "prop:conditional-line",
+      "lem:octic-product",
+      "prop:octic-line",
+      "lem:cubic-slice",
+      "lem:last-cubic-profile",
+      "prop:last-line",
+      "lem:new-cubic",
+      "lem:new-shapes",
+      "prop:new-five-line",
+      "lem:inverse-log-identity",
+      "lem:small-nonlinear",
+      "lem:stationary-coefficients",
+      "lem:capacity-facts",
+      "lem:area-theorem",
+      "lem:last-arc",
+      "lem:arc-capacity",
+      "prop:small-circle-transfer",
+      "lem:quartic-line",
+      "prop:quartic-boundary-gap",
+      "lem:new-strict-levi",
+      "thm:effective256",
+      "thm:sharp-line-limit",
+      "lem:nonic-chord-sign"
+    ],
+    "scope": "Mathematical dependencies recorded by review, not inferred from every nearby textual reference; acyclicity alone does not verify a proof.",
+    "conditional_circle_applications": {
+      "degrees_5_through_8": {
+        "conditional_statement": "prop:small-circle-transfer",
+        "line_hypotheses_supplied_by": [
+          "prop:new-five-line",
+          "prop:last-line",
+          "prop:octic-line"
+        ]
+      },
+      "degrees_9_through_27": {
+        "section": "The circle comparison in degrees nine through twenty-seven",
+        "line_hypotheses_supplied_by": [
+          "prop:collinear-finite",
+          "prop:conditional-line"
+        ],
+        "other_inputs": [
+          "lem:nonic-chord-sign",
+          "lem:exterior-coefficients",
+          "lem:curvature-general",
+          "lem:curvature256",
+          "prop:new-mass"
+        ]
+      },
+      "degrees_at_least_28": {
+        "conditional_statement": "prop:uniform-circle-transfer",
+        "line_hypotheses_supplied_by": [
+          "prop:finite-line",
+          "thm:line256"
+        ]
+      }
+    },
+    "construction_reuse": [
+      {
+        "claim": "thm:sharp-line-limit",
+        "source": "thm:line256",
+        "kind": "The high/low polynomial split, complexified slices, two-height finite-difference argument; not an application of the numerical line bound alone."
+      },
+      {
+        "claim": "lem:new-strict-levi",
+        "source": "Section on target-circle deformation",
+        "kind": "Only the polynomial-division flow construction is reused; no use of the main comparison theorem or its equality conclusion."
+      }
+    ]
+  },
+  "normalization_consistency_check": {
+    "scope": "Exact model check, supplementary to the general proof.",
+    "model": "For p=z^n+v with |v|=1, the normalized deformed polynomial is again a translated power with a unimodular critical value. Thus every normalized length is C_n.",
+    "coefficients": "E_k=C_n T(x,k)-2 pi T(a,k)^2. The ratio T(a,k)^2/T(x,k) increases to C_n/(2 pi), since its consecutive ratio is (k+a)^2/((k+1)(k+x)) and a^2-x=b^2>0. Hence all E_k are nonnegative and their sum is U_n-C_n.",
+    "stationary_check": "The direct model coefficients are h_n=bv, h_(2n)=s_b v^2, [beta]h_n(F_beta)=b v^2, and gamma_2=t_b v^2. The stationary orthogonality and the universal second-coefficient identity agree with these exact model formulas."
+  }
+}

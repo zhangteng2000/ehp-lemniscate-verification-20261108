@@ -1,4 +1,8 @@
 """Independent replay of all radius bands, normalized source coefficients and collinear moment tests."""
+
+if not __debug__:
+    raise RuntimeError('Verification requires assertions: do not run Python with -O or -OO.')
+
 from fractions import Fraction as Q
 from pathlib import Path
 from math import comb,factorial

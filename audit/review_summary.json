@@ -1,0 +1,20 @@
+{
+  "review_completed_utc": "2026-11-08T06:55:18.455061+00:00",
+  "original_numbered_claims": 126,
+  "current_numbered_claims": 50,
+  "pages": 35,
+  "bibliography_entries": 20,
+  "additional_simplification_seconds": 11526.238680999999,
+  "source_and_proof_review_seconds_after_deduction": 10900.443051,
+  "native_compilation": "success",
+  "code_only_clean_replay": "passed",
+  "clean_snapshot_proof_inputs_unchanged": true,
+  "later_optional_check": "12 exact cases / 36 equalities; separately passed",
+  "tex_sha256": "c41c44c6ce68aa5601605cdadf879d3d47d8f17b2d5e16c26f06b21c89dc05b7",
+  "pdf_sha256": "ace627f30f07746d74c57371fbfbb72e9f073c8d2a393ae584b9d23a617e3e88",
+  "limitations": [
+    "The claim-by-claim audit and independent arithmetic circuits are not a formal proof-assistant verification or external referee review.",
+    "Full-text access limits for particular references are listed in source_provenance.json; no inaccessible technical assertion is silently imported.",
+    "The complete replay was exercised on Windows. The provided Unix compiler paths have not been tested in this audit."
+  ]
+}

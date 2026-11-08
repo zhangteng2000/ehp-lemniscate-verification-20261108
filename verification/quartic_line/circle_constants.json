@@ -1,0 +1,19 @@
+{
+  "curvature": {
+    "core": "170761347603/274877906944",
+    "motion": "276755781453/1099511627776",
+    "first": "7730255795/137438953472",
+    "higher": "470031925857/1099511627776",
+    "total": "1491675144081/1099511627776",
+    "radius_lower": "670577225/268435456",
+    "root_bound": "35/512",
+    "matrix_row_upper": "2543563653601/1099511627776",
+    "linear_tail_upper": "1373572324021/1099511627776"
+  },
+  "lambda": "29/20",
+  "tau": "1/64",
+  "gap_upper": "139/200",
+  "middle_margin_lower": "16194779289961/455488858624000",
+  "quartic_gap_constant": "1/32",
+  "status": "all rational acceptance tests passed"
+}

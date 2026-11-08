@@ -1,0 +1,9 @@
+{
+  "checked_utc": "2026-11-08T06:30:03.233388+00:00",
+  "cases": 12,
+  "exact_equalities": 36,
+  "exit_code": 0,
+  "source_sha256": "3e68f48223c3686b06fd3f75b90acd3a02d8c72be2d5b475949a6de1b88e99cd",
+  "primitive_sha256": "7fc8c3c595cdbd8eafdab262401e5bb3615c6f2cf5f0faf1b8b75d7973861c1c",
+  "scope": "Supplemental exact rational examples for the analytic universal and affine coefficient identities; not a proof for arbitrary degree."
+}

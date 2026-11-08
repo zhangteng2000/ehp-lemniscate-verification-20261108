@@ -1,0 +1,9 @@
+{
+  "status": "all displayed endpoint inequalities and supplemental raw-moment identities passed",
+  "low_order_sum_upper": "5819/177600",
+  "tail_sum_lt": "1/1000",
+  "total_sum_lt": "1/25",
+  "minimum_degree": 256,
+  "raw_moment_identity_checks": 161,
+  "degree_sampling_used_for_uniform_bound": false
+}

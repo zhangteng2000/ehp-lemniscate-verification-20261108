@@ -1,0 +1,7 @@
+{
+  "status": "all displayed exact scalar inequalities passed",
+  "degree_six_bound": "17/64 < 27/100",
+  "degree_seven_bound": "9/25",
+  "quartic_lower": "1428481870703/227881569484800",
+  "adaptive_boxes": 0
+}

@@ -1,4 +1,8 @@
 """Exact verification of the interpolation criterion, including the circle transfer."""
+
+if not __debug__:
+    raise RuntimeError('Verification requires assertions: do not run Python with -O or -OO.')
+
 from fractions import Fraction as Q
 from functools import lru_cache
 from math import comb,factorial,isqrt

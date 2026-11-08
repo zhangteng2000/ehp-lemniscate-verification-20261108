@@ -1,0 +1,16 @@
+{
+  "status": "all independent rational checks passed",
+  "curvature_component_upper": {
+    "core": "43182582221/68719476736",
+    "motion": "138820475375/549755813888",
+    "first": "63112666641/1099511627776",
+    "higher": "474985196703/1099511627776"
+  },
+  "curvature_total_upper": "1506660129629/1099511627776",
+  "curvature_bound": "7/5",
+  "quartic_gap_constant": "1/32",
+  "U4_upper": "2353/200",
+  "C4_lower": "1107/100",
+  "matrix_cutoff": 200,
+  "linear_cutoff": 24
+}

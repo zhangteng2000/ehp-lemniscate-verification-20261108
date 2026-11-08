@@ -1,0 +1,56 @@
+EHP manuscript revision, 8 November 2026
+
+The current English amsart manuscript has 35 pages, 50 numbered claims,
+and 20 bibliography entries. The original source contained 126 numbered claims.
+The three editorial passes and the disjoint research intervals are recorded in
+revision_activity.json. The extra proof-simplification stage lasted
+11526.239 seconds. The separate source/proof
+review has 10900.443 credited seconds after a conservative five-minute deduction.
+The clean-copy arithmetic replay ran concurrently; its runtime is not added twice.
+
+Main simplifications
+1. One common signed curvature lemma replaces repeated line-to-circle arguments.
+2. A quartic line is reduced to three closed radical branches, with 128 intervals
+   each. Two independent checked-integer circuits cover all 384 intervals.
+   The boundary-critical quartic gap coefficient is 1/32.
+3. A positive centered inverse-beta recurrence bounds the product error by 1/25.
+4. From degree 28 onward the circle implication is a uniform analytic argument.
+   In degrees 9--27 a complete exterior coefficient sum replaces finite row families.
+5. Stationarity and two explicit coefficients give one common circle implication
+   for degrees 5--8. The second coefficient now follows from a universal extraction
+   identity and two affine formulas, rather than an expanded auxiliary series.
+6. The area-ball estimates in degrees 6--9 are reduced to elementary inequalities.
+
+Rigor and source checks
+Every numbered claim has a review entry and an explicit dependency record.
+The conditional circle hypotheses are supplied by the separately proved line
+estimates. The graph is acyclic, but graph acyclicity alone is not a proof.
+The mass boundary limit, the signed curved-tail term, critical-level Parseval,
+stationary orthogonality, the critical-value variance and Gram restriction,
+complete parameter coverage, and the strict equality deformation were reviewed.
+The degree-one equality case and the degree scope of the critical-value mean
+are explicit. Circle L2 norms are distinguished from disk supremum norms.
+
+The reference audit gives publication data, version/page pinpoints, the exact use
+of each result, and access limits. In particular the Eremenko--Hayman selection
+theorem is not used as an assertion about every maximizer. The all-maximizer
+step is proved separately. A withdrawn finite-range computational claim is
+excluded. Related working notes are distinguished from published or imported lemmas.
+
+Verification
+The saved source compiled successfully with the native editor compiler and with
+the local exporter. All numbered equations and bibliography entries are cited;
+there are no undefined or duplicate labels and no external citations inside proofs.
+The complete code-only tree reconstructed its arithmetic certificates from a
+clean directory with no cached executables or manuscript inputs. No proof program
+or pre-existing arithmetic input changed after the clean snapshot. The optional
+new direct coefficient check separately passed 36 exact equalities.
+The code/data and logs are supplied separately from the analytic manuscript.
+
+Limits
+This is an audited research draft, not an externally refereed or formally verified
+theorem. Running the programs checks the stated finite inequalities; it does not
+verify the connecting analytic proofs. The complete software replay was tested on
+Windows. The Unix compiler paths are supplied but untested in this review.
+Full-text access limits for individual references are stated in source_provenance.json.
+No third-party source PDFs are redistributed in the delivery.

@@ -1,0 +1,45 @@
+{
+  "scope": "Hashes of locally consulted source files for reproducibility of provenance. The third-party PDFs are not redistributed.",
+  "files": {
+    "Dolzhenko1963.pdf": {
+      "bytes": 1011842,
+      "sha256": "1f09c6e19d1385c953524234ec044b4784384da7915faa6badc601f1f3169be1"
+    },
+    "EH_v2.pdf": {
+      "bytes": 111541,
+      "sha256": "49518f120caa1f477521a0bc7edd36e7ac44f1227116fc3ab30d5371bb6d5677"
+    },
+    "EHP1958.pdf": {
+      "bytes": 4304732,
+      "sha256": "5d20ad770563e425ac3343e31581859a24facabf744f10489b8f8d201b0ec12a"
+    },
+    "Elia1984.pdf": {
+      "bytes": 432456,
+      "sha256": "98bdab4000a8831dc905ec95c76599db1ba5b0e2c5ae17e3fef07c853d0895e7"
+    },
+    "FN_v1.pdf": {
+      "bytes": 156536,
+      "sha256": "3773027db763f0a3f38bad479ca2ccc510af80446f470292333583eb92856004"
+    },
+    "Johansson2017.pdf": {
+      "bytes": 414394,
+      "sha256": "4e8178712e0de4342d94b3aad07983ba2beee0cac50e270413f9bad473b50d69"
+    },
+    "Kosukhin2012.pdf": {
+      "bytes": 483677,
+      "sha256": "78c5b78363ba4b57ed4b4a3a6f77641f186af490eddd6910e2ac156d18d2fef1"
+    },
+    "KT2003.pdf": {
+      "bytes": 236839,
+      "sha256": "ce633c4ad935f57adee15d3bf6aefa020fcf5c99aa973b2aab460a2a77207ca8"
+    },
+    "Saff.pdf": {
+      "bytes": 383157,
+      "sha256": "cfbeaad8cf695fc1b5528fd56295d7e3053056634c6841765a434ce9b074d862"
+    },
+    "Tao_v2.pdf": {
+      "bytes": 1177982,
+      "sha256": "4546355757ac2748f454bc1c4e6fc6651502e04e7a81af7ca6b8e3bc148cebff"
+    }
+  }
+}

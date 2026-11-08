@@ -1,4 +1,8 @@
 """Dyadic-interval proof of the scalar circle comparison for n=15,...,27."""
+
+if not __debug__:
+    raise RuntimeError('Verification requires assertions: do not run Python with -O or -OO.')
+
 from pathlib import Path
 from fractions import Fraction as Q
 from audit_quintic_rational import I,PI,J

@@ -1,4 +1,8 @@
 """Upper bounds on Re h_n in the cancelling direction using the exterior area theorem."""
+
+if not __debug__:
+    raise RuntimeError('Verification requires assertions: do not run Python with -O or -OO.')
+
 from fractions import Fraction as Q
 from math import factorial,comb,isqrt
 from collections import Counter

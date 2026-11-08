@@ -1,4 +1,8 @@
 """Replay all degree ranges for the sufficient threshold nine using standard Python."""
+
+if not __debug__:
+    raise RuntimeError('Verification requires assertions: do not run Python with -O or -OO.')
+
 from pathlib import Path
 import subprocess,sys,json
 if __name__=='__main__':

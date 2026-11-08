@@ -1,4 +1,8 @@
 """Independent finite arithmetic audit for the threshold proof. Python standard library."""
+
+if not __debug__:
+    raise RuntimeError('Verification requires assertions: do not run Python with -O or -OO.')
+
 from fractions import Fraction as Q
 from math import comb,isqrt,factorial
 import json

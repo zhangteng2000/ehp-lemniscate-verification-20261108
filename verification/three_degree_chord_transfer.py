@@ -1,4 +1,8 @@
 """Rational circle transfer with the signed first exterior row in degrees six, seven and eight."""
+
+if not __debug__:
+    raise RuntimeError('Verification requires assertions: do not run Python with -O or -OO.')
+
 from fractions import Fraction as Q
 from math import comb
 from functools import lru_cache

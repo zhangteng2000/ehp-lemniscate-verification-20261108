@@ -1,0 +1,87 @@
+{
+  "started_utc": "2026-11-08T05:12:02.774105+00:00",
+  "scope": "Checks modified after the complete line-domain replay; unchanged line-domain covers are linked by their separate receipt.",
+  "jobs": [
+    {
+      "program": "audit_common_identities.py",
+      "exit_code": 0,
+      "elapsed_seconds": 3.952999999979511,
+      "source_sha256": "e5c2b94bb482e03a286295f1cdcfbd24fccc7511f06dbb7eefbceefff64b9038"
+    },
+    {
+      "program": "audit_inverse_coefficients.py",
+      "exit_code": 0,
+      "elapsed_seconds": 2.2820000000065193,
+      "source_sha256": "7f51242820c43858e4ff47a2d0e2fd008527c56c8edae7fa49241312fd577f73"
+    },
+    {
+      "program": "audit_stationary_identity.py",
+      "exit_code": 0,
+      "elapsed_seconds": 1.7179999999934807,
+      "source_sha256": "fecf46a621b14f0332f8038ccead3bb91d023793733a0b289295ed63354ee5a4"
+    },
+    {
+      "program": "audit_stationary_direct.py",
+      "exit_code": 0,
+      "elapsed_seconds": 2.125,
+      "source_sha256": "7fc8c3c595cdbd8eafdab262401e5bb3615c6f2cf5f0faf1b8b75d7973861c1c"
+    },
+    {
+      "program": "audit_capacity_majorants_exact.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.125,
+      "source_sha256": "082d45fcfc81871f4c1bf5cf206c6a4fa650d84075cddc40cb8d4cb4fdf7b242"
+    },
+    {
+      "program": "audit_octic_majorant_exact.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.09399999992456287,
+      "source_sha256": "89f32e10222692557773143efe78fd87dfe27e4c4215beba92c18b2fea666136"
+    },
+    {
+      "program": "audit_nonic_majorant_exact.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.15600000007543713,
+      "source_sha256": "35ba2419c206d6ef144c27cbcdfb1ad4bff74fbf850ff46a525463592d7fc9ef"
+    },
+    {
+      "program": "uniform_circle_transfer.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.14099999994505197,
+      "source_sha256": "4ee835c4a7aa63a2cc2cda8abed857a102d2899f8f6e18a330343a359ce2657b"
+    },
+    {
+      "program": "inverse_beta_moment_audit.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.125,
+      "source_sha256": "c094ffc70f38751ab0079ac4e7042bc82d079cdae747ab2b17bcfe02da83f13c"
+    },
+    {
+      "program": "stationary_circle_transfer.py",
+      "exit_code": 0,
+      "elapsed_seconds": 2.51500000001397,
+      "source_sha256": "23028c3204f4584e15987965d1f36e2ee91a18251f60909199f2ac252b57e16d"
+    },
+    {
+      "program": "independent_stationary_circle_transfer.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.6879999999655411,
+      "source_sha256": "0147f68773d75bc73cba0fb21fb1b44d9691003f805a16c119244f8380bf4df1"
+    },
+    {
+      "program": "single_coefficient_transfer.py",
+      "exit_code": 0,
+      "elapsed_seconds": 15.875,
+      "source_sha256": "ee6489b980874f29a275a20532c965e6d6fd7270c61c064011b2c927b9efa106"
+    },
+    {
+      "program": "independent_single_coefficient_transfer.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.8280000000959262,
+      "source_sha256": "7d264d272ea936b6c7eb31d95d35982aa77e1d6f7cb6cc2138ee6885ec3d1e88"
+    }
+  ],
+  "finished_utc": "2026-11-08T05:12:33.415792+00:00",
+  "log_sha256": "6f0de26ef8b71f8be7eca64dc3c1ec96778486a7e1c9f5b7056a5d4589f2f943",
+  "all_passed": true
+}

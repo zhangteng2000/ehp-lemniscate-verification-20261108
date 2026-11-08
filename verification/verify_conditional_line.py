@@ -1,4 +1,8 @@
 """Exact derivative-radius and collinear-line certificate. Run with standard Python -S -B."""
+
+if not __debug__:
+    raise RuntimeError('Verification requires assertions: do not run Python with -O or -OO.')
+
 from fractions import Fraction as Q
 from functools import lru_cache
 from math import comb,factorial,isqrt

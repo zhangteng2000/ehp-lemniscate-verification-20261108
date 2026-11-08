@@ -1,0 +1,17 @@
+{
+  "bytes": 178267,
+  "labels": 143,
+  "references": 363,
+  "duplicate_labels": [],
+  "undefined_references": [],
+  "unreferenced_equations": [],
+  "uncited_bibliography": [],
+  "missing_bibliography": [],
+  "citations_in_proofs": [],
+  "numbered_environments": 50,
+  "non_ascii_characters": [
+    "\u00e1",
+    "\u00e9",
+    "\u0151"
+  ]
+}

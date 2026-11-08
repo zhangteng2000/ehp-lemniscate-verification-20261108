@@ -1,4 +1,8 @@
 """Exact endpoint arithmetic for the all-polynomial line bound in degrees n>=256."""
+
+if not __debug__:
+    raise RuntimeError('Verification requires assertions: do not run Python with -O or -OO.')
+
 from fractions import Fraction as F
 from math import factorial,isqrt
 from pathlib import Path

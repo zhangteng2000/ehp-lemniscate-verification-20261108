@@ -1,4 +1,8 @@
 """Independent full-phase root-product certificate and octic circle comparison."""
+
+if not __debug__:
+    raise RuntimeError('Verification requires assertions: do not run Python with -O or -OO.')
+
 from fractions import Fraction as Q
 from functools import lru_cache
 from pathlib import Path
@@ -113,15 +117,20 @@ def strips():
         shift=b*(nt//ng);shift2=(b+1)*(nt//ng)
         areas.append(2*PLO*sum(height(x,sinlow(j+shift,j+1+shift2))
                                for j,x in enumerate(angular))/(nt*nh))
-    assert min(areas)>Q(4,5),float(min(areas))
+    assert min(areas)>Q(819,1000),float(min(areas))
     return min(areas)
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--energy',default='octic_energy.json')
-    p.add_argument('--contours',default='octic_contours.json');a=p.parse_args()
+    p.add_argument('--contours',default='octic_contours.json');p.add_argument('--line-only',action='store_true');a=p.parse_args()
     assert __debug__;ll,hh=atan_inv(5);l0,h0=atan_inv(239);assert PLO<16*ll-4*h0<16*hh-4*l0<PHI
     c=check(n,L,json.loads((G/a.energy).read_text())['8'],json.loads((G/a.contours).read_text()))
     assert all(c[i]<=cap[i] for i in range(2,n+1))
     v=matrix_variance(n,cap,Q(13,25))/2;assert v<Q(97,100)
+    if a.line_only:
+        r={'variance_over_two':str(v),'strip_area':str(strips()),'status':'all line comparisons passed'}
+        (G/'octic_line_independent.json').write_text(json.dumps(r,indent=2)+'\n')
+        print('Independent octic line check: variance ratio',float(v),'; full-phase area',float(Q(r['strip_area'])))
+        raise SystemExit(0)
     r={'variance_over_two':str(v),'strip_area':str(strips()),'nonlinear_leaves':nonlinear(),
        'short_arc_terms_display':curve(),'diameter_leaves':circle()}
     (G/'octic_independent.json').write_text(json.dumps(r,indent=2)+'\n')

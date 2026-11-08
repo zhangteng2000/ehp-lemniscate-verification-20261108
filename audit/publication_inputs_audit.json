@@ -1,0 +1,314 @@
+{
+  "bibliography_entries": 20,
+  "alphabetical_bibliography_keys": [
+    "Borwein",
+    "Dahlke",
+    "Danchenko",
+    "Dolzhenko",
+    "Duren",
+    "Elia",
+    "Erdos1983",
+    "EHP",
+    "EH",
+    "FN",
+    "Kosukhin",
+    "KT",
+    "DLMF",
+    "Plasma",
+    "Pommerenke1959",
+    "Pommerenke1961",
+    "Ransford",
+    "Saff",
+    "Tao",
+    "WangPeng"
+  ],
+  "all_references_have_source_audit": true,
+  "numbered_claims": 50,
+  "only_imported_citation_headers": true,
+  "program_names": [
+    {
+      "printed_name": "stationary_circle_transfer.py",
+      "matching_paths": [
+        "verification/stationary_circle_transfer.py"
+      ]
+    },
+    {
+      "printed_name": "independent_stationary_circle_transfer.py",
+      "matching_paths": [
+        "verification/independent_stationary_circle_transfer.py"
+      ]
+    },
+    {
+      "printed_name": "inverse_beta_moment_audit.py",
+      "matching_paths": [
+        "verification/inverse_beta_moment_audit.py"
+      ]
+    },
+    {
+      "printed_name": "effective_line_constants.py",
+      "matching_paths": [
+        "verification/effective_line_constants.py"
+      ]
+    },
+    {
+      "printed_name": "audit_effective_line_256.py",
+      "matching_paths": [
+        "verification/audit_effective_line_256.py"
+      ]
+    },
+    {
+      "printed_name": "verify_interpolation_degrees.py",
+      "matching_paths": [
+        "verification/verify_interpolation_degrees.py"
+      ]
+    },
+    {
+      "printed_name": "independent_interpolation_check.py",
+      "matching_paths": [
+        "verification/independent_interpolation_check.py"
+      ]
+    },
+    {
+      "printed_name": "verify_peeled_line.py",
+      "matching_paths": [
+        "verification/verify_peeled_line.py"
+      ]
+    },
+    {
+      "printed_name": "audit_peeled_line.py",
+      "matching_paths": [
+        "verification/audit_peeled_line.py"
+      ]
+    },
+    {
+      "printed_name": "verify_conditional_line.py",
+      "matching_paths": [
+        "verification/verify_conditional_line.py"
+      ]
+    },
+    {
+      "printed_name": "audit_conditional_line.py",
+      "matching_paths": [
+        "verification/audit_conditional_line.py"
+      ]
+    },
+    {
+      "printed_name": "verify_reciprocal_strips.py",
+      "matching_paths": [
+        "verification/verify_reciprocal_strips.py"
+      ]
+    },
+    {
+      "printed_name": "single_coefficient_transfer.py",
+      "matching_paths": [
+        "verification/single_coefficient_transfer.py"
+      ]
+    },
+    {
+      "printed_name": "independent_single_coefficient_transfer.py",
+      "matching_paths": [
+        "verification/independent_single_coefficient_transfer.py"
+      ]
+    },
+    {
+      "printed_name": "independent_quintic_shapes.py",
+      "matching_paths": [
+        "prior/quintic/independent_quintic_shapes.py"
+      ]
+    },
+    {
+      "printed_name": "quartic_line/verify_quartic_line.py",
+      "matching_paths": [
+        "verification/quartic_line/verify_quartic_line.py"
+      ]
+    },
+    {
+      "printed_name": "quartic_line/verify_quartic_line.py",
+      "matching_paths": [
+        "verification/quartic_line/verify_quartic_line.py"
+      ]
+    },
+    {
+      "printed_name": "uniform_circle_transfer.py",
+      "matching_paths": [
+        "verification/uniform_circle_transfer.py"
+      ]
+    },
+    {
+      "printed_name": "single_coefficient_transfer.py",
+      "matching_paths": [
+        "verification/single_coefficient_transfer.py"
+      ]
+    },
+    {
+      "printed_name": "effective_line_constants.py",
+      "matching_paths": [
+        "verification/effective_line_constants.py"
+      ]
+    },
+    {
+      "printed_name": "audit_effective_line_256.py",
+      "matching_paths": [
+        "verification/audit_effective_line_256.py"
+      ]
+    },
+    {
+      "printed_name": "inverse_beta_moment_audit.py",
+      "matching_paths": [
+        "verification/inverse_beta_moment_audit.py"
+      ]
+    },
+    {
+      "printed_name": "verify_interpolation_degrees.py",
+      "matching_paths": [
+        "verification/verify_interpolation_degrees.py"
+      ]
+    },
+    {
+      "printed_name": "independent_interpolation_check.py",
+      "matching_paths": [
+        "verification/independent_interpolation_check.py"
+      ]
+    },
+    {
+      "printed_name": "verify_peeled_line.py",
+      "matching_paths": [
+        "verification/verify_peeled_line.py"
+      ]
+    },
+    {
+      "printed_name": "audit_peeled_line.py",
+      "matching_paths": [
+        "verification/audit_peeled_line.py"
+      ]
+    },
+    {
+      "printed_name": "single_coefficient_transfer.py",
+      "matching_paths": [
+        "verification/single_coefficient_transfer.py"
+      ]
+    },
+    {
+      "printed_name": "independent_single_coefficient_transfer.py",
+      "matching_paths": [
+        "verification/independent_single_coefficient_transfer.py"
+      ]
+    },
+    {
+      "printed_name": "verify_conditional_line.py",
+      "matching_paths": [
+        "verification/verify_conditional_line.py"
+      ]
+    },
+    {
+      "printed_name": "audit_conditional_line.py",
+      "matching_paths": [
+        "verification/audit_conditional_line.py"
+      ]
+    },
+    {
+      "printed_name": "verify_reciprocal_strips.py",
+      "matching_paths": [
+        "verification/verify_reciprocal_strips.py"
+      ]
+    },
+    {
+      "printed_name": "single_coefficient_transfer.py",
+      "matching_paths": [
+        "verification/single_coefficient_transfer.py"
+      ]
+    },
+    {
+      "printed_name": "independent_single_coefficient_transfer.py",
+      "matching_paths": [
+        "verification/independent_single_coefficient_transfer.py"
+      ]
+    },
+    {
+      "printed_name": "verify_root_product_strip.py",
+      "matching_paths": [
+        "verification/verify_root_product_strip.py"
+      ]
+    },
+    {
+      "printed_name": "audit_octic.py",
+      "matching_paths": [
+        "verification/audit_octic.py"
+      ]
+    },
+    {
+      "printed_name": "stationary_circle_transfer.py",
+      "matching_paths": [
+        "verification/stationary_circle_transfer.py"
+      ]
+    },
+    {
+      "printed_name": "independent_stationary_circle_transfer.py",
+      "matching_paths": [
+        "verification/independent_stationary_circle_transfer.py"
+      ]
+    },
+    {
+      "printed_name": "cubic_terminal_6/",
+      "matching_paths": [
+        "verification/cubic_terminal_6"
+      ]
+    },
+    {
+      "printed_name": "cubic_terminal_7/",
+      "matching_paths": [
+        "verification/cubic_terminal_7"
+      ]
+    },
+    {
+      "printed_name": "verify_terminal_cubic_tree.py",
+      "matching_paths": [
+        "verification/verify_terminal_cubic_tree.py"
+      ]
+    },
+    {
+      "printed_name": "audit_small_scalar_profiles.py",
+      "matching_paths": [
+        "verification/audit_small_scalar_profiles.py"
+      ]
+    },
+    {
+      "printed_name": "prior/quintic/replay_general_quintic.py",
+      "matching_paths": [
+        "prior/quintic/replay_general_quintic.py"
+      ]
+    },
+    {
+      "printed_name": "stationary_circle_transfer.py",
+      "matching_paths": [
+        "verification/stationary_circle_transfer.py"
+      ]
+    },
+    {
+      "printed_name": "independent_stationary_circle_transfer.py",
+      "matching_paths": [
+        "verification/independent_stationary_circle_transfer.py"
+      ]
+    },
+    {
+      "printed_name": "quartic_line/verify_quartic_line.py",
+      "matching_paths": [
+        "verification/quartic_line/verify_quartic_line.py"
+      ]
+    },
+    {
+      "printed_name": "stationary_circle_transfer.py",
+      "matching_paths": [
+        "verification/stationary_circle_transfer.py"
+      ]
+    },
+    {
+      "printed_name": "independent_stationary_circle_transfer.py",
+      "matching_paths": [
+        "verification/independent_stationary_circle_transfer.py"
+      ]
+    }
+  ],
+  "tex_sha256": "c41c44c6ce68aa5601605cdadf879d3d47d8f17b2d5e16c26f06b21c89dc05b7",
+  "scope": "Static editorial/dependency checks only; this is not a mathematical proof checker."
+}

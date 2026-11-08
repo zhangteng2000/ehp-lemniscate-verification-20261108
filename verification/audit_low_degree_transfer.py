@@ -1,4 +1,8 @@
 """Independent rational exterior projections, circle coverings and unsymmetrized nonic strip test."""
+
+if not __debug__:
+    raise RuntimeError('Verification requires assertions: do not run Python with -O or -OO.')
+
 from fractions import Fraction as Q
 from functools import lru_cache
 from math import comb

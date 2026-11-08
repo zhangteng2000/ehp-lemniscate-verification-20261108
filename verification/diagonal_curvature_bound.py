@@ -1,11 +1,15 @@
 """Rational upper bound retaining the favorable low exterior diagonals."""
+
+if not __debug__:
+    raise RuntimeError('Verification requires assertions: do not run Python with -O or -OO.')
+
 from fractions import Fraction as F
 from audit_quintic_rational import I,PI,J
 
 def lower_dyadic(z,bits=28):return F((z*(1<<bits)).__floor__(),1<<bits)
 def upper_dyadic(z,bits=28):return F((z*(1<<bits)).__ceil__(),1<<bits)
 
-def certified(n,R,t,b,constants):
+def certified(n,R,t,b,constants,hn_bound=None,components=False):
     x,_,C,_,U,_=constants
     H=(U/(2*PI)-1)**F(1,2)
     R=F(R);t=F(t);b=F(b);rc=1/(1-b);u=t*R
@@ -22,6 +26,7 @@ def certified(n,R,t,b,constants):
     hn=H.h
     if n==5:hn=min(hn,(F(1,5)+1/(4*I(2)**F(1,2))).h+t/5)
     if n==6:hn=min(hn,F(21,40)+t/6)
+    if hn_bound is not None:hn=min(hn,F(hn_bound))
     first=4*hn*J(x)*I(t)**(1-x)
     top=16*n+64
     def K(p,l):
@@ -43,5 +48,9 @@ def certified(n,R,t,b,constants):
     extra=V**Q*((3+2*Q)/(1-V)+2*V/(1-V)**2)
     lin2=I(linear)**F(1,2)+extra
     high=2*t*I(R)**(1+x)*(H**2*row+2*H*lin2)
+    if components:
+        return {'core':core.h,'motion':move.h,'first':first.h,'higher':high.h,
+                'total':(core+move+first+high).h,'radius_lower':s,'root_bound':hn,
+                'matrix_row_upper':row,'linear_tail_upper':lin2.h}
     return (core+move+first+high).h
 

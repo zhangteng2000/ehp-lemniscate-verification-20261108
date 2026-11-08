@@ -1,4 +1,8 @@
 """Exact all-phase circle reductions in degrees 6 and 7 using the capacity of the marked arc."""
+
+if not __debug__:
+    raise RuntimeError('Verification requires assertions: do not run Python with -O or -OO.')
+
 from fractions import Fraction as Q
 from pathlib import Path
 from math import factorial
@@ -49,11 +53,15 @@ def response(x,c0,c1,H=24):
         bound*=Q(k+1+x,k)
         total+=max(Q(0),abs(b)-bound*w)**2
     return dn(total)
-def run(n,L,M):
+def run(n,L,M,t_override=None,signed=False):
     cap={3:Q(0),6:Q(27,100),7:Q(36,100)}[n]
     cc=constants(n);x=Q(1,n);t={3:Q(1,110),6:Q(1,230),7:Q(1,392)}[n]
-    small=certified(n,3,t,Q(2,5),cc);assert small<L
-    if n>3:assert verify(n,cap,den=1024)
+    if t_override is not None:t=Q(t_override)
+    hn=cap/2+Q(n-1,2*n)*t if signed else None
+    small=certified(n,3,t,Q(2,5),cc,hn_bound=hn);assert small<L
+    if n>3:
+        from audit_capacity_majorants_exact import verify as verify_majorants
+        verify_majorants()
     x,b,il,ih,gap,H=const(n);rows=raw(n,M)
     tt=2*t/(1+t*t);end=Q(173,200);assert end**2<Q(3,4)
     todo=[(tt,end),(end,Q(1))];leaves=[];rho=[Q(k,40) for k in range(1,40)]
@@ -87,10 +95,12 @@ def run(n,L,M):
         c=(l+h)/2;todo.extend(((l,c),(c,h)))
     leaves.sort();assert leaves[0][0]==tt and leaves[-1][1]==1 and all(i[1]==j[0] for i,j in zip(leaves,leaves[1:]))
     ans={'degree':n,'conditional_line':str(L),'nonlinear_cap':str(cap),'rows':M,'tau':str(t),
-         'curvature_upper_display':float(small),'intervals':[[str(u),str(v)] for u,v in leaves]}
+         'signed_first_term':signed,'curvature_upper_display':float(small),'intervals':[[str(u),str(v)] for u,v in leaves]}
     (G/f'capacity_transfer_{n}.json').write_text(json.dumps(ans,indent=1)+'\n')
     print(n,L,M,len(leaves),'closed diameter intervals')
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--n',type=int,required=True);p.add_argument('--L',type=Q,required=True)
-    p.add_argument('--M',type=int,required=True);a=p.parse_args();assert __debug__;run(a.n,a.L,a.M)
+    p.add_argument('--M',type=int,required=True)
+    p.add_argument('--tau',type=Q);p.add_argument('--signed',action='store_true')
+    a=p.parse_args();assert __debug__;run(a.n,a.L,a.M,a.tau,a.signed)
 

@@ -1,4 +1,8 @@
 """Forward the cubic strip's source bounds into EVERY lower derivative's root-radius test."""
+
+if not __debug__:
+    raise RuntimeError('Verification requires assertions: do not run Python with -O or -OO.')
+
 from verify_conditional_line import make_envelope,errors,choose,up,Q
 from math import comb
 from pathlib import Path

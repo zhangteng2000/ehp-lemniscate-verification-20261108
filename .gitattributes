@@ -1,0 +1,3 @@
+# Preserve certificate inputs and recorded SHA-256 values byte for byte.
+# Verification must not depend on the clone's core.autocrlf setting.
+* -text

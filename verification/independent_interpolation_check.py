@@ -1,4 +1,8 @@
 """Independent fixed-grid rational verification. No imports from the first verifier."""
+
+if not __debug__:
+    raise RuntimeError('Verification requires assertions: do not run Python with -O or -OO.')
+
 from fractions import Fraction as F
 from math import comb,factorial,isqrt
 from functools import lru_cache

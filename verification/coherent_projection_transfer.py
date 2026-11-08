@@ -1,4 +1,8 @@
 """Rational orthogonal-projection bounds for the all-degree collinear reduction."""
+
+if not __debug__:
+    raise RuntimeError('Verification requires assertions: do not run Python with -O or -OO.')
+
 from fractions import Fraction as F
 from pathlib import Path
 import json

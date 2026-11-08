@@ -1,4 +1,8 @@
 """Independent arithmetic for the circular-arc capacity transfer, including the cubic."""
+
+if not __debug__:
+    raise RuntimeError('Verification requires assertions: do not run Python with -O or -OO.')
+
 from fractions import Fraction as Q
 from pathlib import Path
 from functools import lru_cache
@@ -26,7 +30,7 @@ def area_ball(n,goal):
         assert b[k]-a[k]>Q(1,16384);l=list(a);r=list(b);l[k]=w;r[k]=w
         cells.extend([(tuple(l),b),(a,tuple(r))])
     return num
-def curvature(n,L,t,c):
+def curvature(n,L,t,c,signed=False,hn_bound=None):
     x=Q(1,n);H=upper_sqrt((n-1)*c[3].h/4);U=c[4].h;R=Q(3);r0=Q(5,3);b=Q(2,5)
     ep=t*R/root_floor(1-(t*R)**2,2)
     core=U*powup(R/2,x)*2*jupper(1-x)/PLO*(ep+ep*ep)+(1+x)/(2+x)*t*t*powup(R,2+x)
@@ -34,6 +38,8 @@ def curvature(n,L,t,c):
     move=(4*H*powup(R,x)*(r0/R)**2/((2-x)*root_floor(1-rr,2))
           +4*H*H*powup(r0,4*x)*powup(R,-3*x)/(3*x*(1-rr)))*t/(b-t)
     hn=min(H,Q(21,40)+t/6) if n==6 else H
+    if signed:hn=min(hn,{6:Q(27,200),7:Q(18,100)}[n]+Q(n-1,2*n)*t)
+    if hn_bound is not None:hn=min(hn,Q(hn_bound))
     first=4*hn*jupper(x)*powup(t,1-x)
     s=Q(2997,1000);assert s*s*(1+(t*R)**2)<R*R
     y=up(powup(s,-x));N=220;v=1/s
@@ -105,11 +111,19 @@ def circle(n,L,M,t,goal,c):
         b1=(2*lo+hi)/3;b2=(lo+2*hi)/3;stack.extend([(lo,b1),(b1,b2),(b2,hi)])
     return cnt
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--n',type=int,nargs='+',default=[3,6,7]);a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--n',type=int,nargs='+',default=[6,7]);p.add_argument('--simplified',action='store_true');a=p.parse_args()
     assert __debug__;pars={3:(Q(6,5),15,Q(1,110),Q(0)),6:(Q(73,100),20,Q(1,230),Q(27,100)),7:(Q(367,500),16,Q(1,392),Q(36,100))}
+    if a.simplified:
+        pars[6]=(Q(73,100),12,Q(1,200),Q(27,100))
+        pars[7]=(Q(367,500),6,Q(1,300),Q(36,100))
     out={}
     for n in a.n:
-        L,M,t,goal=pars[n];con=constants(n);v=area_ball(n,goal);w=curvature(n,L,t,con);k=circle(n,L,M,t,goal,con)
+        L,M,t,goal=pars[n];con=constants(n)
+        if a.simplified:
+            from audit_capacity_majorants_exact import verify as exact_majorants
+            exact_majorants();v=0
+        else:v=area_ball(n,goal)
+        w=curvature(n,L,t,con,signed=a.simplified);k=circle(n,L,M,t,goal,con)
         out[n]=[v,w,k];print(n,'unit-ball leaves',v,'curvature',w,'diameter intervals',k,flush=True)
-    (G/'capacity_transfer_independent.json').write_text(json.dumps(out,indent=1)+'\n')
+    (G/('capacity_transfer_simplified_independent.json' if a.simplified else 'capacity_transfer_independent.json')).write_text(json.dumps(out,indent=1)+'\n')
 

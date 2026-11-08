@@ -1,0 +1,7 @@
+{
+  "started_utc": "2026-11-08T03:23:50.177610+00:00",
+  "ended_utc": "2026-11-08T03:59:48.492615+00:00",
+  "exit_code": 0,
+  "log_sha256": "78621e6ccfc57de297f6b2b239963a48604697cb8380d8dede4423295cdf06e3",
+  "note": "Background runtime is not separately added to foreground research time."
+}

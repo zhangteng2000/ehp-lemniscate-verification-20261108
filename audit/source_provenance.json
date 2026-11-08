@@ -1,0 +1,233 @@
+{
+  "checked_utc": "2026-11-08T06:32:59.186585+00:00",
+  "scope": "Source-by-source review. Direct primary-text checks are distinguished from publication metadata and corroboration. No source PDFs are redistributed in this repository.",
+  "references": [
+    {
+      "key": "Borwein",
+      "year": 1995,
+      "doi": "10.1090/S0002-9939-1995-1223265-3",
+      "citation": "Proc. Amer. Math. Soc. 123 (1995), no. 3, 797--799.",
+      "verification": "DOI metadata verified. Full original article was not accessible through the publisher during this audit.",
+      "use": "Historical linear length bound only. The bound 8 e pi n is corroborated on page 1111 of Danchenko and in the Fryntov--Nazarov introduction; no lemma of the present proof depends on an unread Borwein statement."
+    },
+    {
+      "key": "Dahlke",
+      "year": 2026,
+      "doi": "10.5281/zenodo.20318611",
+      "citation": "The cubic Erdos--Herzog--Piranian lemniscate inequality, Zenodo preprint, 21 May 2026.",
+      "verification": "Primary nine-page PDF and live Zenodo record read. PDF dated May 20; repository publication date May 21. DOI identifies version 1; live metadata marked it latest during this audit.",
+      "pages": "Theorem 1.1 p. 2; Proposition 3.1 pp. 3--4; Lemmas 4.1--5.2 pp. 4--7; Proposition 5.3 p. 8.",
+      "use": "Direct cubic comparison, including strictness when the two boundary critical values differ. Independently checked branch pairing in the Chebyshev/Joukowski substitution, the three-branch inequality, the two tail bounds, and the negative final polynomial. This is a preprint, not a journal theorem.",
+      "exact_constant_audit": "verification/audit_cubic_literature.py independently checks the coarse decimal constants in Lemma 5.1 by rational powers and a positive exponential series, and checks the Chebyshev/Joukowski Laurent identities and final strict sign. The branch and integral arguments were checked from the primary text."
+    },
+    {
+      "key": "Danchenko",
+      "year": 2007,
+      "doi": "10.1070/SM2007v198n08ABEH003875",
+      "citation": "Sb. Math. 198 (2007), no. 8, 1111--1117.",
+      "url": "https://www.mathnet.ru/php/getFT.phtml?jrnid=sm&option_lang=eng&paperid=3795&what=fullteng",
+      "verification": "Primary English full text and DOI metadata checked.",
+      "pages": "Historical bounds p. 1111; Theorem 1 and the model length/asymptotic p. 1112.",
+      "use": "History: length at most 2 pi n. Does not supply any new all-degree extremal comparison.",
+      "method_comparison": "The full proof in Sections 2--3 was checked for a possible earlier version of the present deformation. Its variation is total variation of arguments of rational functions, with analytic capacity and bounded secant rotation; it is not the polynomial-division parameter flow used here. The classical model beta formula is credited at p. 1112."
+    },
+    {
+      "key": "Dolzhenko",
+      "year": 1963,
+      "citation": "Izv. Akad. Nauk SSSR Ser. Mat. 27 (1963), no. 2, 241--252 (Russian).",
+      "verification": "Primary Russian scan and journal metadata checked; Section 4 read through the proof of the integral-geometric formula.",
+      "pages": "Section 4, Lemma and equation (2), pp. 245--249; Theorem 3 p. 251.",
+      "use": "Cauchy--Crofton formula, normalized for unoriented planar lines with factor 1/2. The auxiliary lemma applies to piecewise smooth hypersurfaces; it is not restricted to algebraic sets. Historical bound 4 pi n."
+    },
+    {
+      "key": "Duren",
+      "year": 1983,
+      "citation": "Univalent Functions, Grundlehren der mathematischen Wissenschaften 259, Springer-Verlag, New York, 1983.",
+      "url": "https://link.springer.com/book/9780387907956",
+      "verification": "Original publisher book metadata verified. Contents identify Section 2.2, p. 29. The original page was not available for direct reading; later printing dates are not treated as the original publication year.",
+      "pages": "Section 2.2, p. 29.",
+      "use": "Classical exterior area theorem: sum j |a_j|^2 <= 1 for a normalized univalent exterior function. Statement and normalization checked independently by the area integral. Crossref book-title search returned unrelated hits, which were not accepted as verification."
+    },
+    {
+      "key": "Elia",
+      "year": 1984,
+      "citation": "M. Elia and M. T. Galizia Angeli, The length of a lemniscate, Publ. Inst. Math. (Beograd) (N.S.) 36(50) (1984), 51--55.",
+      "url": "https://ftp.gwdg.de/pub/misc/EMIS/journals/PIMB/050/n050p051.pdf",
+      "verification": "All five pages read from the primary EMIS journal scan. Embedded text encoding is unusable, so the pages were rendered and inspected visually. Journal and author-institution metadata agree.",
+      "pages": "Equations (8), (12)--(13), pp. 52--53; the manuscript cites equation (13), p. 53.",
+      "use": "Classical length formula only. Equation (13) is 2 pi^2/[sin(pi/n) Gamma(1-1/n) Gamma((1+1/n)/2)^2]; reflection and duplication give exactly 2^(1/n) B(1/2,1/(2n)). The n=1 value is immediate separately."
+    },
+    {
+      "key": "Erdos1983",
+      "year": 1983,
+      "citation": "Problems and results on polynomials and interpolation, Functions, Series, Operators, Vol. I, II (Budapest, 1980), Colloq. Math. Soc. Janos Bolyai 35, North-Holland, Amsterdam--New York, 1983, 485--495.",
+      "url": "https://www.renyi.hu/~p_erdos/1983-24.pdf",
+      "verification": "Primary PDF read and publication data checked against the author archive catalogue entry 1983-24.",
+      "pages": "Problem 1, pp. 485--486.",
+      "use": "Historical restatement of the exact extremal question and prize. No mathematical lemma is imported."
+    },
+    {
+      "key": "EHP",
+      "year": 1958,
+      "doi": "10.1007/BF02790232",
+      "citation": "J. Analyse Math. 6 (1958), no. 1, 125--148.",
+      "url": "https://www.renyi.hu/~p_erdos/1958-05.pdf",
+      "verification": "Primary scan and DOI metadata checked.",
+      "pages": "Problem 12, p. 142 (PDF page 18).",
+      "use": "Original question for arbitrary monic complex polynomials. Volume 6 is correct; the volume 7 in Tao v2 bibliography is a typographical error, not copied into this bibliography."
+    },
+    {
+      "key": "EH",
+      "year": 1999,
+      "doi": "10.1307/mmj/1030132418",
+      "citation": "Michigan Math. J. 46 (1999), no. 2, 409--415; corrected arXiv:0805.2295v2, 27 March 2024.",
+      "url": "https://arxiv.org/abs/0805.2295v2",
+      "verification": "Corrected primary nine-page preprint and original journal DOI metadata checked. Pinpoints in the manuscript refer to the corrected preprint pagination.",
+      "pages": "Lemma 4 pp. 3--5; Lemma 5 pp. 5--7; remarks and Lemma 6 p. 7.",
+      "use": "Continuity and existence of a maximum; existence of a selected maximum with all critical values on the unit circle; quadratic case. It does not assert that every maximizer has this boundary property. The latter is proved separately by strict Levi variation in the manuscript."
+    },
+    {
+      "key": "FN",
+      "year": 2009,
+      "doi": "10.1090/trans2/226/05",
+      "citation": "New estimates for the length of the Erdos--Herzog--Piranian lemniscate, Linear and Complex Analysis, Amer. Math. Soc. Transl. Ser. 2, 226 (2009), 49--60; arXiv:0808.0717v1.",
+      "url": "https://arxiv.org/abs/0808.0717v1",
+      "verification": "Primary eighteen-page preprint and volume DOI metadata checked. Section/page references use preprint pagination.",
+      "pages": "Section 5, Lemma 1 pp. 5--6; Section 6 pp. 7--10; Section 9.",
+      "use": "Inverse-line Crofton method, local maximality for each fixed n>=2, and historical 2n+O(n^(7/8)) estimate. Its introductory wording about all maximizers is not substituted for the narrower Eremenko--Hayman selection theorem."
+    },
+    {
+      "key": "Kosukhin",
+      "year": 2012,
+      "doi": "10.1134/S0001434612110235",
+      "citation": "Math. Notes 92 (2012), nos. 5--6, 779--789.",
+      "verification": "Primary Russian text and English journal DOI metadata checked. The publisher DOI record uses combined issue 5--6; one MathNet display labels the translated item issue 6.",
+      "pages": "Theorem 3, Russian p. 881. No unverified translated page pinpoint is given.",
+      "use": "Historical upper bound pi n+O(sqrt(n log n)); not used in a proof."
+    },
+    {
+      "key": "KT",
+      "year": 2003,
+      "doi": "10.1007/s00229-003-0411-3",
+      "citation": "Manuscripta Math. 112 (2003), no. 4, 519--538.",
+      "url": "https://users.mai.liu.se/vlatk48/papers/man03.pdf",
+      "verification": "Primary author PDF read and DOI metadata checked.",
+      "pages": "Theorem 1 and Corollary 1 pp. 521--522; Theorem 4 pp. 535--536.",
+      "use": "Laplace representation/logarithmic convexity in the history; exterior square-root derivative Parseval formula in the proof. Passage to a critical level is justified by length continuity and increasing nonnegative coefficient sums. No Jordan-curve assumption is imposed on a critical boundary.",
+      "critical_level_correction": "The prose on p. 536 says the curve is homeomorphic to a circle at the critical level and that its length is decreasing above that level. Neither assertion can be used literally: z^n-1 has a multiple-point boundary, and z^n has length 2 pi exp(t/n), which increases. The representation itself is correct. The manuscript uses the regular level r>1, divides its length by r, and lets r decrease to one using coefficient-sum monotonicity and continuity of L(r^(-n)p(rz)). This independently justifies the critical-level formula."
+    },
+    {
+      "key": "DLMF",
+      "author": "A. B. Olde Daalhuis",
+      "citation": "Hypergeometric function, Chapter 15 in NIST Digital Library of Mathematical Functions.",
+      "url": "https://dlmf.nist.gov/15.10.E21",
+      "verification": "Primary connection formula and its local solution definitions checked.",
+      "pages": "Equation 15.10.21.",
+      "use": "Specialization A=B=(1+x)/2, C=1, 0<x<1. The exponent difference at unity is -x, not an integer. The singular coefficient is 2^x B(1/2,x/2), the constant is 2 pi Gamma(-x)/Gamma((1-x)/2)^2, and the error is O((1-u)^(1-x)). Equality A=B does not invalidate the zero-to-one connection formula."
+    },
+    {
+      "key": "Plasma",
+      "author": "Plasma AI",
+      "year": 2026,
+      "citation": "Problem 114: Low-degree lemniscate extremizers, Erdos Problems: An Open Record, working notes, 15 October 2026.",
+      "url": "https://erdosproblems.ai/wiki/research/erdos_114",
+      "verification": "Primary research index, source citation metadata, and proofs L179, L180, L186 read. Index blob c0ec963cef5b1432f72a18eb5fa06133a660b041; L186 proof blob c1721f8b3c5e8b48ebacc730de8d524446651b51. Citation file names the corporate author Plasma AI.",
+      "use": "Related work only: a computer-assisted cubic bound, quartic collision families, a coarse harmonic-line bound, and a small-curvature extension. The record explicitly leaves general quartics open and distinguishes author-recorded claims from independent review. The present proof imports none of its computational assertions.",
+      "comparison": "Its quartic projection method is attributed to Fryntov--Nazarov. Its small-curvature argument uses singular windows and a resultant, while the present common curvature estimate uses the transported square-root derivative and signed Laurent kernels. The shared elementary quartic critical-value difference is obtained directly by integration in each source."
+    },
+    {
+      "key": "Pommerenke1959",
+      "year": 1959,
+      "doi": "10.1307/mmj/1028998227",
+      "citation": "On some problems by Erdos, Herzog and Piranian, Michigan Math. J. 6 (1959), no. 3, 221--225.",
+      "verification": "DOI publication metadata and primary later bibliographies checked. Publisher full text was unavailable during this audit.",
+      "use": "Historical discussion of polynomial lemniscate geometry; no technical assertion from an unread page is used as a proof lemma."
+    },
+    {
+      "key": "Pommerenke1961",
+      "year": 1961,
+      "doi": "10.1307/mmj/1028998561",
+      "citation": "On metric properties of complex polynomials, Michigan Math. J. 8 (1961), no. 2, 97--115.",
+      "verification": "DOI publication metadata and primary later bibliographies checked. Publisher full text was unavailable during this audit.",
+      "use": "Historical discussion only. This article must not be confused with the different real-zero paper in volume 8, pp. 49--54."
+    },
+    {
+      "key": "Ransford",
+      "year": 1995,
+      "doi": "10.1017/CBO9780511623776",
+      "citation": "Potential Theory in the Complex Plane, London Mathematical Society Student Texts 28, Cambridge University Press, Cambridge, 1995.",
+      "verification": "Primary publisher metadata checked. Book page 135 was not directly accessible. The exact page and formula are quoted by the primary Kalmykov--Kovalev paper, arXiv:2105.09771v1, pp. 10--11, Proposition 4.1 proof. An independent exterior-map derivation is recorded below.",
+      "pages": "Table 5.1, p. 135.",
+      "use": "Capacity of the unit circular arc of angular half-width alpha is sin(alpha/2)."
+    },
+    {
+      "key": "Saff",
+      "year": 2010,
+      "citation": "Logarithmic potential theory with applications to approximation theory, Surv. Approx. Theory 5 (2010), 165--200.",
+      "url": "https://pages.cs.wisc.edu/~deboor/sat/papers/14/",
+      "verification": "Primary complete article and journal page checked.",
+      "pages": "Theorem 1.9 p. 172; Theorem 3.5 and the following normalization p. 185.",
+      "use": "Transfinite-diameter characterization of capacity and leading coefficient of the normalized exterior map. Compact continuum and simply connected exterior hypotheses are stated before their use."
+    },
+    {
+      "key": "Tao",
+      "year": 2025,
+      "doi": "10.48550/arXiv.2512.12455",
+      "citation": "The maximal length of the Erdos--Herzog--Piranian lemniscate in high degree, arXiv:2512.12455v2 [math.CV] (2025).",
+      "url": "https://arxiv.org/abs/2512.12455v2",
+      "verification": "Primary fifty-six-page v2 read; version revised 22 December 2025. Statements and normalizations checked against the displayed equations.",
+      "pages": "Equation (1.1) p. 2; Theorem 1.1(iv) p. 4; Remark 1.3; Lemmas 7.1--7.2 pp. 30--31.",
+      "use": "Effective sufficiently-large-degree theorem and uniqueness; no explicit numerical N0 is printed. Root dispersion through an integrated triangle defect is credited. Equation (3.5), p. 20, omits a factor 2^(1/n); the manuscript instead uses the correct equation (1.1) normalization and an independently stated DLMF specialization."
+    },
+    {
+      "key": "WangPeng",
+      "year": 2006,
+      "doi": "10.1216/rmjm/1181069502",
+      "citation": "C. Wang and L. Peng, The arc length of the lemniscate |w^n+c|=1, Rocky Mountain J. Math. 36 (2006), no. 1, 337--347.",
+      "verification": "Author, title, DOI, volume, issue and pages verified in the publisher DOI metadata and journal issue contents. Danchenko p. 1117 also cites this exact item. The full original article was not accessible from Project Euclid during this audit.",
+      "use": "Historical attribution of the extremal comparison within the one-critical-value family, not an imported proof lemma. The comparison is independently checked below.",
+      "independent_check": "For n>1 put b=(1-1/n)/2. The inverse arclength integral for z^n+c is the circle mean of |e^(it)-c|^(-2b). For 0<=r=|c|<1 it equals 2 pi sum_j ((b)_j/j!)^2 r^(2j), which is increasing. At r=1 the integral is finite and the limit follows from the integrable bound given by (1-r)^2+r|1-e^(it)|^2. For r>1 it is r^(-2b) times its value at 1/r, hence strictly smaller than at 1. For n=1 every value is 2 pi."
+    }
+  ],
+  "independent_arc_capacity_check": {
+    "map": "For s=sin(alpha/2), Psi(w)=w(1+s w)/(w+s), |w|>1.",
+    "verification": "The pole -s is inside the unit disk. On |w|=1 the image is exp(2 i arg(1+s w)), hence the closed arc |arg z|<=alpha. The only critical points are -s +/- i sqrt(1-s^2), on the unit circle, and their images are the endpoints. For a large target value exactly one inverse root lies outside the unit disk. This number is unchanged throughout the connected complement of the arc because a root can cross the unit circle only above the arc. Thus Psi maps the exterior disk conformally onto the arc complement. Its leading coefficient at infinity is s, so capacity is s."
+  },
+  "excluded_claims": [
+    {
+      "claim": "A certified general finite range n<=14 in the Mendoza experiments.",
+      "primary_readme": "https://github.com/MendozaLab/erdos-experiments/blob/main/README.md",
+      "readme_sha": "0a85f802a944c9a534427eab93910a9434008033",
+      "primary_correction": "https://github.com/MendozaLab/erdos-experiments/issues/4#issuecomment-5940173558",
+      "finding": "The current README and the author correction withdraw proof-level certification. The work sampled a bounded coefficient box, omitted the model-containing half for n>=6, and used floating contours and an unproved Lipschitz estimate. It is not cited as an established finite-degree theorem.",
+      "related_pr": "https://github.com/google-deepmind/formal-conjectures/pull/3958",
+      "pr_status": "Closed, not merged; the finite-range sibling was removed. A Lean statement with sorry is not a formal proof."
+    }
+  ],
+  "writing_sources": {
+    "index": "https://terrytao.wordpress.com/advice-on-writing-papers/",
+    "applied": "Accurate result statements, notation aligned with the source problem, explicit dependency lemmas, and enough detail at limiting and computational steps. The introduction was lightly edited, not replaced by a new historical narrative.",
+    "reviewed_pages": [
+      "https://terrytao.wordpress.com/advice-on-writing-papers/",
+      "https://terrytao.wordpress.com/advice-on-writing-papers/describe-the-results-accurately/",
+      "https://terrytao.wordpress.com/advice-on-writing-papers/use-good-notation/",
+      "https://terrytao.wordpress.com/advice-on-writing-papers/give-appropriate-amounts-of-detail/",
+      "https://terrytao.wordpress.com/advice-on-writing-papers/dont-overoptimise/",
+      "https://terrytao.wordpress.com/advice-on-writing-papers/proofread-and-double-check-your-paper-before-submission/",
+      "https://terrytao.wordpress.com/advice-on-writing-papers/on-local-and-global-errors-in-mathematical-papers-and-how-to-detect-them/"
+    ],
+    "final_pass_application": "Global disk norms are defined before use and are distinguished from circle L2 norms. Reused proof constructions are identified explicitly. The second constant coefficient is obtained from one universal extraction identity and two affine identities. The conditional proof graph is recorded separately and checked for cycles. Computational success is not presented as a proof of the connecting analytic statements."
+  },
+  "independent_area_normalization_check": "For a normalized univalent exterior map f(w)=w+a0+sum a_j w^(-j), Green's formula on |w|=r>1 gives area of its bounded complement equal to pi(r^2-sum j |a_j|^2 r^(-2j)). This area is nonnegative. Letting r decrease to one proves the exterior area inequality in the stated normalization; translation a0 contributes zero.",
+  "additional_literature_considered": [
+    {
+      "author": "E. Looijenga",
+      "title": "The complement of the bifurcation variety of a simple singularity",
+      "citation": "Invent. Math. 23 (1974), no. 2, 105--116.",
+      "doi": "10.1007/BF01405164",
+      "primary_metadata": "https://research-portal.uu.nl/en/publications/the-complement-of-the-bifurcation-variety-of-a-simple-singularity/",
+      "status": "Publisher and author-institution metadata checked. Full original scan was not accessible through the attempted archive. Not imported as a proof lemma and not added to the bibliography merely on a title/metadata match.",
+      "comparison": "The elementary compactness statement is the properness property of the polynomial critical-value map. Its short coefficient-normalization proof is retained, so no stronger singularity-theoretic covering theorem is required."
+    }
+  ]
+}

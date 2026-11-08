@@ -1,4 +1,8 @@
 """Build and replay one full exact or alternate terminal cubic chart from its index files."""
+
+if not __debug__:
+    raise RuntimeError('Verification requires assertions: do not run Python with -O or -OO.')
+
 from pathlib import Path
 from itertools import product
 from fractions import Fraction as Q

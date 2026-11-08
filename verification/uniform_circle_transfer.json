@@ -1,0 +1,8 @@
+{
+  "status": "all uniform analytic endpoint inequalities passed",
+  "minimum_degree": 28,
+  "degree_subdivisions": 0,
+  "diameter_partitions": 0,
+  "first_case_lower": "97/125",
+  "second_case_margin": "3911/80000000"
+}

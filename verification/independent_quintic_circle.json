@@ -1,0 +1,12 @@
+{
+  "status": "all standalone rational checks passed",
+  "curvature_upper": "947552743801/1099511627776",
+  "curvature_bound": "9/10",
+  "minimum_margin_lower": "1013800091/137438953472",
+  "moment_interval": [
+    "11831/10000",
+    "1479/1250"
+  ],
+  "max_rows": 3,
+  "intervals": 6
+}

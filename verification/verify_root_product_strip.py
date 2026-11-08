@@ -1,4 +1,8 @@
 """Exact strip certificate from the geometric mean of the squared reciprocal roots."""
+
+if not __debug__:
+    raise RuntimeError('Verification requires assertions: do not run Python with -O or -OO.')
+
 from pathlib import Path
 from fractions import Fraction as Q
 from functools import lru_cache

@@ -1,0 +1,350 @@
+Cubic source audit: exact constants, Joukowski identity, and final strict sign passed.
+{
+  "cubic_discriminant": "exact polynomial identity modulo X^2+Y^2=1",
+  "exterior_coefficient_checks": 240,
+  "model_numerator_divisibility": "all m=1,...,8, three rational exponents",
+  "pair_beta_coefficient_checks": 45,
+  "scope": "algebraic checks only; does not certify any parameter coverage"
+}
+Exact R3,...,R9, homogeneity, resultant signs, and signed tail identity passed.
+Exact affine-flow second coefficient and first-row constant: passed.
+Direct rational polynomial-flow and inverse-germ checks: 12 passed.
+Capacity majorants: degree six <=17/64; degree seven <9/25, exact algebra passed.
+Degree-eight majorant <=925/1792 <53/100; no adaptive boxes.
+Nonic nonlinear coefficient: |R9|<15/16 by a quadratic lower bound.
+Uniform circle implication for all n>=28: endpoint arithmetic passed; no degree or diameter cover.
+Centered inverse-beta lemma: all rational endpoint bounds passed; recurrence identities 161
+Recomputed 384 closed quartic line intervals, expanded circuit.
+Recomputed 384 closed quartic line intervals, factored circuit.
+Created 384 closed parameter intervals with outward coefficient bounds.
+Independently enclosed 384 closed parameter intervals.
+{
+  "curvature_components": {
+    "core": 0.6212261636501106,
+    "motion": 0.25170791691588257,
+    "first": 0.056245013511006865,
+    "higher": 0.42749154623034386,
+    "total": 1.3566706403073439
+  },
+  "middle_margin_lower": "16194779289961/455488858624000",
+  "gap_constant": "1/32"
+}
+Independent curvature upper: 1.3702994052696063  < 7/5; all scalar checks passed.
+both complete closed line covers and both rational circle checks passed
+14625 discriminant evaluations on a determining grid, and all source identities passed.
+Strict analytic margins from rational enclosures: 0.0039033913158857646 1.0492516756089159
+Passed. The dyadic sine table, beta constants and complete chord comparisons were checked.
+Absolute combined roundoff and trig error < 2.2738570870128687e-12 < 2^-28 < guard 2^-25
+A 8x16x32 K=256 M=128 proved=3766/4096 min_cells=6491
+A {'stage': 0, 'mesh': [8, 16, 32, 256, 128], 'input_count': 4096, 'unresolved': 330, 'least_passing_cell_count': 7302, 'counts_sha256': '6298eddc125fe9170c3887f77878640af000b429d1bde274240d57c104e9d85a'}
+A 16x32x64 K=512 M=256 proved=2640/2640 min_cells=31959
+A {'stage': 1, 'mesh': [16, 32, 64, 512, 256], 'input_count': 2640, 'unresolved': 0, 'least_passing_cell_count': 31959, 'counts_sha256': '77ebf70756f2c99d9d4cd1870554c1ec6768b5802c5873d95861dbec445c0aee'}
+B 8x16x32 K=256 M=128 proved=923/4096 min_cells=6772
+B {'stage': 0, 'mesh': [8, 16, 32, 256, 128], 'input_count': 4096, 'unresolved': 3173, 'least_passing_cell_count': 8693, 'counts_sha256': '79479b981ad7257149e873190b4e319e74b137c1f20acd8e3d0c603ea839f835'}
+B 16x32x64 K=512 M=256 proved=25356/25384 min_cells=34371
+B {'stage': 1, 'mesh': [16, 32, 64, 512, 256], 'input_count': 25384, 'unresolved': 28, 'least_passing_cell_count': 34784, 'counts_sha256': '855d1d8efb46d946253a7271e9992119596208df314876b6533efb220c71c8e0'}
+B 32x64x128 K=512 M=256 proved=224/224 min_cells=36625
+B {'stage': 2, 'mesh': [32, 64, 128, 512, 256], 'input_count': 224, 'unresolved': 0, 'least_passing_cell_count': 36625, 'counts_sha256': '54df28cdf5a6a3ed795cbafcd4cc2931d0e7da7c1a8019314b663b2b637bb48d'}
+A 0 {'mesh': [8, 16, 32, 256, 128], 'leaves': 3766, 'min': 7315, 'sha256': 'd86c378edd14f1f0819f5d4dcf505194c09d2ac847f3e41968dba9adb71462db'}
+A 1 {'mesh': [16, 32, 64, 512, 256], 'leaves': 2640, 'min': 31980, 'sha256': '25b81d88967695ec3d2ba32719ffc05fdc00590636cc51cefd30802de1f65f13'}
+B 0 {'mesh': [8, 16, 32, 256, 128], 'leaves': 923, 'min': 8701, 'sha256': 'a80ce332342a3eaf5a1589af84de087c9c517313ef2274a13f99abc5dcfd681b'}
+B 1 {'mesh': [16, 32, 64, 512, 256], 'leaves': 25356, 'min': 34801, 'sha256': 'f44c21a080331491c420c4dfd4db8b68c9def748f520d9e9998b9e438e1fba05'}
+B 2 {'mesh': [32, 64, 128, 512, 256], 'leaves': 224, 'min': 36633, 'sha256': 'e72ca375eddd1d6f841190287329acab53acd7ad1f1c7413551fe06021490589'}
+{'unit': 274877906944, 'counts': {0: 347691, 1: 183483, 3: 81183, 2: 83026}, 'max_depth': 38, 'unprocessed': 0}
+{'level': 0, 'counts': [1, 0, 0, 0], 'classification_sha256': '6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d'}
+{'level': 1, 'counts': [16, 0, 0, 0], 'classification_sha256': '374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb'}
+{'level': 2, 'counts': [135, 121, 0, 0], 'classification_sha256': 'd43135209fdcbb38be2c501818fde1eeb0917032ee55676adaa10dcbef46954c'}
+{'level': 3, 'counts': [1043, 1114, 1, 2], 'classification_sha256': 'ca9ad3df8f3837cccbc97edabc6a8968aebc390bb5b56b56a192a151815fe8db'}
+{'level': 4, 'counts': [5095, 9103, 857, 1633], 'classification_sha256': 'e758e9d66ce716547ea33b2326743044fbaf7be2d6e055cfc6bd5846ca83044a'}
+{'level': 5, 'counts': [3475, 61135, 5682, 11228], 'classification_sha256': '09d8250decbe404d58c137b47a812a1483d32f0c5d683e4d320f9629e8a498ed'}
+{'level': 6, 'counts': [1217, 45398, 5928, 3057], 'classification_sha256': '79981751a181140c28d3f6a4e2afb2e96d776ab824f4a25bc2d95a95a829b2fd'}
+{'level': 7, 'counts': [316, 16054, 1738, 1364], 'classification_sha256': '17caecd3338d2dec7522d3f0866dcac6d84eed0299af051fceefb4c415255cc5'}
+{'level': 8, 'counts': [0, 4562, 388, 106], 'classification_sha256': 'b162004a27713cf28f1366bb8e1bbd78b4c55dfadb69a3f966911f1fa7dec735'}
+All requested certificates recomputed. Both phase domains and the complete source domain are covered.
+degree 5 code-directory replay passed
+Exact stationary transfer 5 4 closed intervals
+Exact stationary transfer 6 10 closed intervals
+Exact stationary transfer 7 10 closed intervals
+Exact stationary transfer 8 6 closed intervals
+Independent exact stationary transfer 5 4 closed intervals
+Independent exact stationary transfer 6 12 closed intervals
+Independent exact stationary transfer 7 12 closed intervals
+Independent exact stationary transfer 8 6 closed intervals
+{'N': 256, 'k': 'ceil(2 sqrt(n))', 'curvature_source': 'all_degree_diagonal_curvature.txt', 'derivative_error_lt': '423/1000 times R', 'root_radius_lt': '577/1000', 'root_sum_lt': '229/100', 'W_lt': '46/5', 'beta_remainder_lt': '1/2', 'beta_upper_display': 0.2729590328947493, 'beta_parts_display': [0.24606154829705082, 0.02689748459768423, 1.4289665088452072e-14], 'oscillation_fraction_gt': '9/25', 'bl_factor_display': 0.018211478279914983, 'outer_Rouche_ratio_display': 8.923037791411135e-30, 'critical_value_radius_lt': '1/4', 'value_bound_display': 0.0009913179229995303}
+Independent analytic endpoint checks passed, including c*, root budgets, beta moments, oscillation, Rouche and the circle gap.
+Alternative beta error < 0.24756653792667083
+Exact finite-difference inversion, inverse-differentiation coefficients and signed-curvature bounds verified.
+raw_count_lower_display 32 0.03826176855496161
+normalized_T_derivative_lower_display 30 0.01939880358691259
+Rouche_ratio_display 28 0.08165416968031058
+critical_radius_upper_display 31 0.7066521997870109
+All degrees 28 through 255 passed
+1 32 0.038172177283588814
+2 30 0.019397094847556688
+3 30 0.08841220289388385
+4 31 0.7066705237882128
+Complete consecutive range 28 255 independently verified.
+15 variance/2 0.939846435539159 Gram ratio 0.8372835496570872
+16 variance/2 0.4759252351911306 Gram ratio 0.41498676266310813
+17 variance/2 0.26011721226032475 Gram ratio 0.234646582719895
+18 variance/2 0.15138338305842747 Gram ratio 0.13485097353980585
+19 variance/2 0.08562480533206468 Gram ratio 0.07983499300418724
+20 variance/2 0.051863147604908164 Gram ratio 0.052146457457290865
+21 variance/2 0.0339220960352653 Gram ratio 0.031995940431569704
+22 variance/2 0.022801652636438692 Gram ratio 0.021353927985147313
+23 variance/2 0.015085420031412972 Gram ratio 0.014591844805372
+24 variance/2 0.009650910659359505 Gram ratio 0.011390233281976716
+25 variance/2 0.0071810678092482485 Gram ratio 0.007918534083041958
+26 variance/2 0.005284598123792635 Gram ratio 0.005972078521500508
+27 variance/2 0.0037784681838854478 Gram ratio 0.004749329325377842
+Closed every real chord diameter for every degree 15 through 27 [(15, 21), (16, 11), (17, 11), (18, 9), (19, 9), (20, 9), (21, 7), (22, 6), (23, 6), (24, 6), (25, 6), (26, 6), (27, 6)]
+15 0.9398464350719836 0.8372835491994814 28
+16 0.47592523503343015 0.4149867625176209 16
+17 0.260117212205765 0.2346465826643321 16
+18 0.1513833830398764 0.1348509735174771 10
+19 0.08562480532618785 0.07983499299463089 10
+20 0.05186314760287779 0.05214645745274273 8
+21 0.03392209603459849 0.03199594042966141 8
+22 0.02280165263620926 0.021353927984293964 8
+23 0.015085420031336458 0.014591844804986941 8
+24 0.009650910659332192 0.011390233281778739 8
+25 0.007181067809238796 0.007918534082958527 8
+26 0.005284598123789225 0.005972078521462776 8
+27 0.003778468183884199 0.004749329325359792 8
+Both finite strips and the unbounded analytic range have passed their constituent verification programs.
+10 variance/2 and Gram 0.930332937436178 0.9306133936446429
+11 variance/2 and Gram 0.48524928350615987 0.5037128061437749
+12 variance/2 and Gram 0.29353314516257184 0.3000033622062848
+13 variance/2 and Gram 0.16398223434216905 0.16820286665553455
+14 variance/2 and Gram 0.10268188756105179 0.11004083973859506
+9 [None, None, 0.1020806, 0.0137808, 0.0837289, 0.3107551, 0.5207145, 0.784246, 0.0, 1.0]
+9 [0.9321994304499825]
+10 [0.9303329374361776, 0.9306133936446352]
+11 [0.4852492835061577, 0.5037128061437695]
+12 [0.2935331451625366, 0.300003362206238]
+13 [0.16398223434213774, 0.16820286665548395]
+14 [0.1026818875608791, 0.11004083973824633]
+nonic variance/2 0.9321994304499825 six uniform angular area lower bounds [0.97026, 0.969169, 0.966272, 0.963272, 0.959386, 0.955159]
+Nonic nonlinear coefficient: |R9|<15/16 by a quadratic lower bound.
+9 26 complete diameter intervals
+10 10 complete diameter intervals
+11 9 complete diameter intervals
+12 7 complete diameter intervals
+13 7 complete diameter intervals
+14 7 complete diameter intervals
+9 34
+10 12
+11 10
+12 8
+13 8
+14 8
+nonic independent strip area 0.9234564343071561
+All analytic-range, finite-line, strip and chord verification programs for n>=9 passed.
+8 [None, None, 0.1961073, 0.0617875, 0.3185829, 0.5113597, 0.7733154, 0.0, 1.0]
+8 variance/2 0.9631078908609753 certified minimum strip area 0.8210632167157895
+Exact stationary transfer 5 4 closed intervals
+Exact stationary transfer 6 10 closed intervals
+Exact stationary transfer 7 10 closed intervals
+Exact stationary transfer 8 6 closed intervals
+Independent exact stationary transfer 5 4 closed intervals
+Independent exact stationary transfer 6 12 closed intervals
+Independent exact stationary transfer 7 12 closed intervals
+Independent exact stationary transfer 8 6 closed intervals
+Independent octic line check: variance ratio 0.9631078908609753 ; full-phase area 0.8190179089986086
+All constituent threshold checks, including both unrestricted octic checks, passed.
+9 single row, 14 closed intervals; least margin 3.4107228325698284e-05
+10 single row, 8 closed intervals; least margin 0.00016029115801454073
+11 single row, 8 closed intervals; least margin 0.012082675281110102
+12 single row, 6 closed intervals; least margin 0.0032598589156869386
+13 single row, 6 closed intervals; least margin 0.012287369048508773
+14 single row, 6 closed intervals; least margin 0.02019043223387629
+15 single row, 19 closed intervals; least margin 0.0001890060330603762
+16 single row, 11 closed intervals; least margin 0.00026978656896750445
+17 single row, 10 closed intervals; least margin 0.0036653323089762494
+18 single row, 9 closed intervals; least margin 0.002404623638801369
+19 single row, 9 closed intervals; least margin 0.005264855494336614
+20 single row, 8 closed intervals; least margin 0.004045081750711741
+21 single row, 6 closed intervals; least margin 0.0032564995725860536
+22 single row, 6 closed intervals; least margin 0.006451685918599814
+23 single row, 6 closed intervals; least margin 0.009387958854702737
+24 single row, 6 closed intervals; least margin 0.012095458255986248
+25 single row, 6 closed intervals; least margin 0.014599837014828216
+26 single row, 6 closed intervals; least margin 0.01692306299566702
+27 single row, 6 closed intervals; least margin 0.019084055594242064
+Independent 9 one coefficient, 20 closed intervals; curvature 0.7551476594231701
+Independent 10 one coefficient, 10 closed intervals; curvature 0.4981330910513148
+Independent 11 one coefficient, 8 closed intervals; curvature 0.45046884515347974
+Independent 12 one coefficient, 8 closed intervals; curvature 0.44884340754549706
+Independent 13 one coefficient, 8 closed intervals; curvature 0.41218477685920724
+Independent 14 one coefficient, 8 closed intervals; curvature 0.4162913542897644
+Independent 15 one coefficient, 26 closed intervals; curvature None
+Independent 16 one coefficient, 16 closed intervals; curvature None
+Independent 17 one coefficient, 14 closed intervals; curvature None
+Independent 18 one coefficient, 10 closed intervals; curvature None
+Independent 19 one coefficient, 10 closed intervals; curvature None
+Independent 20 one coefficient, 8 closed intervals; curvature None
+Independent 21 one coefficient, 8 closed intervals; curvature None
+Independent 22 one coefficient, 8 closed intervals; curvature None
+Independent 23 one coefficient, 8 closed intervals; curvature None
+Independent 24 one coefficient, 8 closed intervals; curvature None
+Independent 25 one coefficient, 8 closed intervals; curvature None
+Independent 26 one coefficient, 8 closed intervals; curvature None
+Independent 27 one coefficient, 8 closed intervals; curvature None
+Capacity majorants: degree six <=17/64; degree seven <9/25, exact algebra passed.
+Absolute combined roundoff and trig error < 3.866919382363129e-12 < 2^-28 < guard 2^-25
+A 8x16x32 K=256 M=128 proved=1378/1378 min_cells=7894
+A 16x32x64 K=512 M=256 proved=21139/21139 min_cells=35047
+A 32x64x128 K=1024 M=256 proved=4840/4840 min_cells=73989
+6 A primary all terminal counts passed [1378, 21139, 4840]
+6 A alternate all terminal counts passed [1378, 21139, 4840]
+6 A all 32 scalar implications passed
+6 A 0 unsigned 0.7546698498369455
+6 A 1 unsigned 0.7491791725723707
+6 A 2 unsigned 0.7526854143732521
+6 A 3 unsigned 0.74762084288309
+6 A 4 unsigned 0.7541950462597428
+6 A 5 unsigned 0.7492522192765557
+6 A 6 unsigned 0.7458677219826493
+6 A 7 unsigned 0.7531480434997573
+6 A 8 unsigned 0.751139259134669
+6 A 9 unsigned 0.7482782632207553
+6 A 10 unsigned 0.7468782013905422
+6 A 11 unsigned 0.7453685695040516
+6 A 12 unsigned 0.745307697250564
+6 A 13 unsigned 0.7654929365070275
+6 A 14 unsigned 0.7442850433919737
+6 A 15 unsigned 0.7446502769128988
+6 A 16 unsigned 0.745307697250564
+6 A 17 unsigned 0.7469268991933322
+6 A 18 unsigned 0.7479982508547127
+6 A 19 unsigned 0.750007035219801
+6 A 20 unsigned 0.752368878655117
+6 A 21 unsigned 0.7546211520341555
+6 A 22 unsigned 0.7572264844834216
+6 A 23 unsigned 0.7590526520880473
+6 A 24 unsigned 0.7608422963405805
+6 A 25 unsigned 0.7470364692496098
+6 A 26 unsigned 0.751041863529089
+6 A 27 unsigned 0.7540367784006752
+6 A 28 unsigned 0.7572021355820265
+6 A 29 unsigned 0.7590039542852572
+6 A 30 unsigned 0.7478156340942501
+6 A 31 unsigned 0.7522836575002345
+B 8x16x32 K=256 M=128 proved=0/1087 min_cells=6596
+B 16x32x64 K=512 M=256 proved=20587/21885 min_cells=32784
+B 32x64x128 K=1024 M=256 proved=15195/17112 min_cells=65575
+B 64x128x256 K=1024 M=512 proved=768/3072 min_cells=132470
+6 B primary all terminal counts passed [1087, 21885, 17112, 3072]
+6 B alternate all terminal counts passed [1087, 21885, 17112, 3072]
+6 B all 32 scalar implications passed
+6 B 0 unsigned 0.931820281936342
+6 B 1 unsigned 0.8623041684535879
+6 B 2 unsigned 0.7964282157293879
+6 B 3 unsigned 0.7607935985377905
+6 B 4 unsigned 0.753403706964405
+6 B 5 unsigned 0.7461233854472968
+6 B 6 unsigned 0.7466225379258946
+6 B 7 unsigned 0.7452833483491691
+6 B 8 unsigned 0.7465616656724071
+6 B 9 unsigned 0.7561673072727386
+6 B 10 unsigned 0.7500313841211961
+6 B 11 unsigned 0.7546211520341555
+6 B 12 unsigned 0.7476451917844851
+6 B 13 unsigned 0.7484852288826129
+6 B 14 unsigned 0.749909639614221
+6 B 15 unsigned 0.7553759679774008
+6 B 16 unsigned 0.7521375640918644
+6 B 17 unsigned 0.7515044926555942
+6 B 18 unsigned 0.7522106107960495
+6 B 19 unsigned 0.75376894048533
+6 B 20 unsigned 0.7559238182587885
+6 B 21 unsigned 0.7577256369620192
+6 B 22 unsigned 0.7488382879528406
+6 B 23 unsigned 0.7532576135560348
+6 B 24 signed 0.879672657228387
+6 B 25 signed 0.8652603337878113
+6 B 26 signed 0.8339913354797598
+6 B 27 signed 0.819672511820541
+6 B 28 signed 0.7868140172294233
+6 B 29 signed 0.7711194110730968
+6 B 30 unsigned 0.7493739637835307
+6 B 31 unsigned 0.7562525284276211
+Absolute combined roundoff and trig error < 3.867063830291855e-12 < 2^-28 < guard 2^-25
+A 8x16x32 K=256 M=128 proved=1155/1155 min_cells=8055
+A 16x32x64 K=512 M=256 proved=20823/20823 min_cells=36569
+A 32x64x128 K=1024 M=256 proved=21640/21640 min_cells=73969
+7 A primary all terminal counts passed [1155, 20823, 21640]
+7 A alternate all terminal counts passed [1155, 20823, 21640]
+7 A all 32 scalar implications passed
+7 A 0 unsigned 0.8706558416320764
+7 A 1 unsigned 0.7593570133554849
+7 A 2 unsigned 0.754852466597408
+7 A 3 unsigned 0.7538541616402126
+7 A 4 unsigned 0.7572264844834216
+7 A 5 unsigned 0.7569099487652864
+7 A 6 unsigned 0.7565934130471512
+7 A 7 unsigned 0.7542680929639278
+7 A 8 unsigned 0.7549620366536856
+7 A 9 unsigned 0.7541341740062553
+7 A 10 unsigned 0.7544385352736929
+7 A 11 unsigned 0.7568612509624963
+7 A 12 unsigned 0.7550594322592656
+7 A 13 unsigned 0.7564473196387812
+7 A 14 unsigned 0.7517236327681492
+7 A 15 unsigned 0.7639954790712343
+7 A 16 unsigned 0.7631919653251991
+7 A 17 unsigned 0.7622910559735836
+7 A 18 unsigned 0.7617797290442885
+7 A 19 unsigned 0.7614023210726658
+7 A 20 unsigned 0.7610614364531356
+7 A 21 unsigned 0.7611344831573207
+7 A 22 unsigned 0.7611710065094132
+7 A 23 unsigned 0.7615240655796408
+7 A 24 unsigned 0.761889299100566
+7 A 25 unsigned 0.7623032304242812
+7 A 26 unsigned 0.7645311549019246
+7 A 27 unsigned 0.76548076205633
+7 A 28 unsigned 0.767891303294436
+7 A 29 paired 0.9337823164107519
+7 A 30 paired 0.930062360823912
+7 A 31 paired 0.9253139076421468
+B 8x16x32 K=256 M=128 proved=0/1024 min_cells=6812
+B 16x32x64 K=512 M=256 proved=20304/20960 min_cells=31237
+B 32x64x128 K=1024 M=256 proved=26384/28359 min_cells=63517
+B 64x128x256 K=1024 M=512 proved=4552/4552 min_cells=139243
+7 B primary all terminal counts passed [1024, 20960, 28359, 4552]
+7 B alternate all terminal counts passed [1024, 20960, 28359, 4552]
+7 B all 32 scalar implications passed
+7 B 0 unsigned 1.6429421216283118
+7 B 1 unsigned 1.4334441740256443
+7 B 2 unsigned 1.283418418080289
+7 B 3 unsigned 1.1592998932192247
+7 B 4 unsigned 1.0491819866602912
+7 B 5 unsigned 0.9470992175617109
+7 B 6 unsigned 0.8524428633886089
+7 B 7 unsigned 0.761962345804751
+7 B 8 unsigned 0.7517114583174517
+7 B 9 unsigned 0.755935992709486
+7 B 10 unsigned 0.7561429583713436
+7 B 11 unsigned 0.752368878655117
+7 B 12 unsigned 0.752368878655117
+7 B 13 unsigned 0.7558020737518134
+7 B 14 unsigned 0.7536958937811451
+7 B 15 unsigned 0.7622301837200961
+7 B 16 unsigned 0.7651885752395898
+7 B 17 unsigned 0.7528193333309247
+7 B 18 unsigned 0.756130783920646
+7 B 19 unsigned 0.7597709446792001
+7 B 20 unsigned 0.7643120147893695
+7 B 21 unsigned 0.7537932893867251
+7 B 22 paired 0.8374708630573965
+7 B 23 paired 0.8164534479195413
+7 B 24 paired 0.7841693091281869
+7 B 25 paired 0.7957165321257567
+7 B 26 paired 0.7483172950066078
+7 B 27 paired 0.7511749536302814
+7 B 28 paired 0.753352671667081
+7 B 29 paired 0.817067875054172
+7 B 30 paired 0.8197593330460867
+7 B 31 paired 0.8225242551519246
+All requested certificate ranges have been successfully recomputed.

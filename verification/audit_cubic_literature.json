@@ -1,0 +1,13 @@
+{
+  "source": "Dahlke, DOI 10.5281/zenodo.20318611, pp. 4--8",
+  "status": "exact constant and Laurent-polynomial checks passed",
+  "lambda_enclosure": [
+    "828427/2000000",
+    "517767/1250000"
+  ],
+  "A_upper": "229/100",
+  "B_upper": "10/9",
+  "K_upper": "8",
+  "proof_by_degree_or_parameter_sampling": false,
+  "scope": "The analytic branch coverage and integrals remain primary-text proof obligations; their source audit is separate."
+}

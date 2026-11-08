@@ -1,4 +1,8 @@
 """Replay the extracted quartic and quintic code without manuscript files."""
+
+if not __debug__:
+    raise RuntimeError('Verification requires assertions: do not run Python with -O or -OO.')
+
 from pathlib import Path
 from zipfile import ZipFile
 from io import BytesIO

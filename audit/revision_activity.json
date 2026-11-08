@@ -1,0 +1,76 @@
+{
+  "started_utc": "2026-11-08T00:14:34.074240+00:00",
+  "three_passes": [
+    {
+      "pass": 1,
+      "ended_utc": "2026-11-08T00:27:13.484631+00:00",
+      "scope": "Dependency closure, amsart conversion, compactness and imported lemmas; arithmetic replay still in progress."
+    },
+    {
+      "pass": 2,
+      "ended_utc": "2026-11-08T00:33:01.298455+00:00",
+      "scope": "Separate conflicting notation, isolate imported hypergeometric identity, remove redundant main-theorem specializations, improve headings and transitions."
+    },
+    {
+      "pass": 3,
+      "ended_utc": "2026-11-08T00:36:31.773329+00:00",
+      "scope": "Expose the general curvature estimate used by the small degrees, state the capacity results precisely, check boundary and multiplicity conventions, and remove optional proof headings."
+    }
+  ],
+  "provenance_start": "2026-11-08T00:36:31.773329+00:00",
+  "provenance_seconds_required": 10800,
+  "original_sha256": "2dc38f707ff36dd9bed3758ad0529160c1d5fe0cc0b157f108493bf876ebd261",
+  "provenance_intervals": [
+    {
+      "start": "2026-11-08T00:36:31.773329+00:00",
+      "end": "2026-11-08T01:19:45.560625+00:00",
+      "work": "Primary-source reading and attribution, cubic simplification by Dahlke, independent mathematical audit of the deformation, angular estimates, quartic charts/tails/projection counts, code-to-proof checks; fresh complete certificate replay finished with exit code zero."
+    },
+    {
+      "start": "2026-11-08T01:19:45.560625+00:00",
+      "end": "2026-11-08T01:32:37.502881+00:00",
+      "work": "Completed source-driven exterior Parseval simplification; checked Dahlke proof, Saff capacity argument, quartic discriminant budget and signed tail, cubic roundoff and tree logic, derivative/variance and conditional code correspondence. Identified a one-real-parameter quartic line reduction for further proof simplification."
+    },
+    {
+      "start": "2026-11-08T04:44:43.741562+00:00",
+      "end": "2026-11-08T06:55:18.455061+00:00",
+      "work": "Primary-source and provenance review, adversarial mathematical review, source normalization, proof-to-code correspondence, and final manuscript source/print verification. Re-derived the two stationary coefficients, checked all degree ranges and equality, reviewed the complete mass and curvature limits, and validated the code-only delivery from a clean copy. The concurrent arithmetic replay is not added separately."
+    }
+  ],
+  "additional_simplification_seconds_required": 10800,
+  "additional_simplification_requested_utc": "2026-11-08T00:49:45.362015+00:00",
+  "simplification_intervals": [
+    {
+      "start": "2026-11-08T01:32:37.502881+00:00",
+      "end": "2026-11-08T02:28:31.400831+00:00",
+      "work": "Replaced the full two-parameter quartic curve computation by four one-parameter line charts and two independent exact circuits; proved the signed first-tail-term refinement; increased the quartic quantitative gap from 2^-18 to 2^-5. Consolidated the general curvature proof and the exterior coefficient argument, reduced quintic circle comparison from 25 to 3 rows and 13 to 6 intervals, and replaced two adaptive capacity majorant covers by elementary algebra. Newly changed statements and scalar constants independently audited."
+    },
+    {
+      "start": "2026-11-08T02:28:31.400831+00:00",
+      "end": "2026-11-08T03:38:03.909766+00:00",
+      "work": "Unified the inverse logarithm/resultant identity, affine inverse normalization and projection inequalities; moved general arguments before degree applications. Reduced quartic line cover from four to three branches by conjugation (384 intervals), retained the verified gap 1/32, replaced octic and nonic nonlinear covers by elementary inequalities. A shared signed short-arc coefficient bounds the quintic loss by 9/10 and reduces degree-six/seven rows to 12/6. Strengthened the nonic nonlinear bound from 17/16 to 15/16 by a shared quadratic budget. Summing all source-variation orders in closed form replaces every circle comparison in degrees 9--27 by one coefficient; both exact bisection and independent trisection passed. Inspected code arithmetic, interpolation constants, equality deformation and high-degree analytic steps. No background runtime is separately credited."
+    },
+    {
+      "start": "2026-11-08T03:38:03.909766+00:00",
+      "end": "2026-11-08T04:34:28.580316+00:00",
+      "work": "Completed the claim-by-claim check of all retained statements, including continuous cubic-profile covers, scalar strip implications, the mass boundary limit, curvature kernels, inverse coefficient homogeneity and equality variations. Replaced all n>=28 circle partitions by a uniform analytic two-case proof with explicit rational margins. Unified n9..27 circle comparisons. A positive recurrence for centered inverse-beta moments replaces the three-event probability bound and improves the product error from 273/1000 to 1/25; exact arithmetic and 161 raw-moment identities passed. Corrected the actual arithmetic-library attribution. Newly derived a stationary first-variation inequality and an explicit second Laurent coefficient; two independent complete rational covers for degrees5..8 passed as candidates. This last structural simplification is not yet installed in the manuscript, pending final analytic derivation and source refactor."
+    },
+    {
+      "start": "2026-11-08T04:34:28.580316+00:00",
+      "end": "2026-11-08T04:44:43.741562+00:00",
+      "work": "Closed the new stationary first-variation argument and explicit affine-flow second coefficient. Both independent exact covers and both curvature circuits passed for degrees five through eight. Replaced the general multi-row coefficient families by two explicit coefficients and one common implication, reducing the current manuscript to 34 pages and 50 numbered claims. The same source compiled natively and exported successfully. Began checking fresh literature-status leads; this last search is not separately counted."
+    }
+  ],
+  "current_stage": "review_complete",
+  "current_foreground_interval_start": null,
+  "fresh_certificate_replay": {
+    "started_about_utc": "2026-11-08T00:19:00Z",
+    "completion_seen_utc": "2026-11-08T01:07:58Z",
+    "exit_code": 0,
+    "log_sha256": "0d42a41fb8c5a6fed8c6d2ce540b208dc9b3c0a9c1a5ffef701475a12d5fc02c",
+    "note": "Background execution time is not separately added to foreground research time."
+  },
+  "additional_simplification_seconds_completed": 11526.238680999999,
+  "provenance_overhead_deduction_seconds": 300,
+  "provenance_seconds_completed_after_deduction": 10900.443051
+}

@@ -1,4 +1,8 @@
 """A rational absolute-error enclosure of both binary64 circuits in QuinticPhaseAudit.cs."""
+
+if not __debug__:
+    raise RuntimeError('Verification requires assertions: do not run Python with -O or -OO.')
+
 from fractions import Fraction as F
 from pathlib import Path
 import json

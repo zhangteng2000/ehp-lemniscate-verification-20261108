@@ -1,0 +1,16 @@
+{
+  "reviewed_utc": "2026-11-08T06:55:49.154036+00:00",
+  "pdf_sha256": "ace627f30f07746d74c57371fbfbb72e9f073c8d2a393ae584b9d23a617e3e88",
+  "pages": 35,
+  "all_pages_inspected_in_rendered_contact_sheets": true,
+  "full_resolution_additional_pages": [
+    2,
+    9,
+    10,
+    11
+  ],
+  "overfull_boxes": 0,
+  "underfull_bibliography_paragraphs": 2,
+  "finding": "No clipped formula, overlapping object, missing glyph, or unresolved cross-reference was found in the rendered final PDF. The two underfull bibliography warnings do not obscure text.",
+  "final_local_edit": "The pagination convention for the two imported preprints was added on page 2; that page was re-rendered and re-inspected at full resolution after the final native compilation."
+}

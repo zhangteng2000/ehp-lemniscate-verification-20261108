@@ -1,4 +1,8 @@
 """Degree-complete rational circle and signed exterior-coefficient checks for 9 through 14."""
+
+if not __debug__:
+    raise RuntimeError('Verification requires assertions: do not run Python with -O or -OO.')
+
 from fractions import Fraction as Q
 from functools import lru_cache
 from math import comb
@@ -45,7 +49,8 @@ def run(n):
     assert ans[0][0]==lo0 and ans[-1][1]==1 and all(a[1]==b[0] for a,b in zip(ans,ans[1:]))
     return [[str(a),str(b)] for a,b in ans]
 if __name__=='__main__':
-    assert __debug__;res={'bernstein_minimum':nonlinear()}
+    from audit_nonic_majorant_exact import verify as verify_nonlinear
+    assert __debug__;res={'nonlinear_bound':verify_nonlinear()}
     for n in range(9,15):
         vals=run(n);res[str(n)]=vals;print(n,len(vals),'complete diameter intervals',flush=True)
     Path(__file__).with_name('joint_circle_intervals.json').write_text(json.dumps(res,separators=(',',':'))+'\n')

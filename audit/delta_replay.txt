@@ -1,0 +1,87 @@
+
+### audit_common_identities.py
+{
+  "cubic_discriminant": "exact polynomial identity modulo X^2+Y^2=1",
+  "exterior_coefficient_checks": 240,
+  "model_numerator_divisibility": "all m=1,...,8, three rational exponents",
+  "pair_beta_coefficient_checks": 45,
+  "scope": "algebraic checks only; does not certify any parameter coverage"
+}
+
+### audit_inverse_coefficients.py
+Exact R3,...,R9, homogeneity, resultant signs, and signed tail identity passed.
+
+### audit_stationary_identity.py
+Exact affine-flow second coefficient and first-row constant: passed.
+
+### audit_stationary_direct.py
+Direct rational polynomial-flow and inverse-germ checks: 12 passed.
+
+### audit_capacity_majorants_exact.py
+Capacity majorants: degree six <=17/64; degree seven <9/25, exact algebra passed.
+
+### audit_octic_majorant_exact.py
+Degree-eight majorant <=925/1792 <53/100; no adaptive boxes.
+
+### audit_nonic_majorant_exact.py
+Nonic nonlinear coefficient: |R9|<15/16 by a quadratic lower bound.
+
+### uniform_circle_transfer.py
+Uniform circle implication for all n>=28: endpoint arithmetic passed; no degree or diameter cover.
+
+### inverse_beta_moment_audit.py
+Centered inverse-beta lemma: all rational endpoint bounds passed; recurrence identities 161
+
+### stationary_circle_transfer.py
+Exact stationary transfer 5 4 closed intervals
+Exact stationary transfer 6 10 closed intervals
+Exact stationary transfer 7 10 closed intervals
+Exact stationary transfer 8 6 closed intervals
+
+### independent_stationary_circle_transfer.py
+Independent exact stationary transfer 5 4 closed intervals
+Independent exact stationary transfer 6 12 closed intervals
+Independent exact stationary transfer 7 12 closed intervals
+Independent exact stationary transfer 8 6 closed intervals
+
+### single_coefficient_transfer.py
+9 single row, 14 closed intervals; least margin 3.4107228325698284e-05
+10 single row, 8 closed intervals; least margin 0.00016029115801454073
+11 single row, 8 closed intervals; least margin 0.012082675281110102
+12 single row, 6 closed intervals; least margin 0.0032598589156869386
+13 single row, 6 closed intervals; least margin 0.012287369048508773
+14 single row, 6 closed intervals; least margin 0.02019043223387629
+15 single row, 19 closed intervals; least margin 0.0001890060330603762
+16 single row, 11 closed intervals; least margin 0.00026978656896750445
+17 single row, 10 closed intervals; least margin 0.0036653323089762494
+18 single row, 9 closed intervals; least margin 0.002404623638801369
+19 single row, 9 closed intervals; least margin 0.005264855494336614
+20 single row, 8 closed intervals; least margin 0.004045081750711741
+21 single row, 6 closed intervals; least margin 0.0032564995725860536
+22 single row, 6 closed intervals; least margin 0.006451685918599814
+23 single row, 6 closed intervals; least margin 0.009387958854702737
+24 single row, 6 closed intervals; least margin 0.012095458255986248
+25 single row, 6 closed intervals; least margin 0.014599837014828216
+26 single row, 6 closed intervals; least margin 0.01692306299566702
+27 single row, 6 closed intervals; least margin 0.019084055594242064
+
+### independent_single_coefficient_transfer.py
+Independent 9 one coefficient, 20 closed intervals; curvature 0.7551476594231701
+Independent 10 one coefficient, 10 closed intervals; curvature 0.4981330910513148
+Independent 11 one coefficient, 8 closed intervals; curvature 0.45046884515347974
+Independent 12 one coefficient, 8 closed intervals; curvature 0.44884340754549706
+Independent 13 one coefficient, 8 closed intervals; curvature 0.41218477685920724
+Independent 14 one coefficient, 8 closed intervals; curvature 0.4162913542897644
+Independent 15 one coefficient, 26 closed intervals; curvature None
+Independent 16 one coefficient, 16 closed intervals; curvature None
+Independent 17 one coefficient, 14 closed intervals; curvature None
+Independent 18 one coefficient, 10 closed intervals; curvature None
+Independent 19 one coefficient, 10 closed intervals; curvature None
+Independent 20 one coefficient, 8 closed intervals; curvature None
+Independent 21 one coefficient, 8 closed intervals; curvature None
+Independent 22 one coefficient, 8 closed intervals; curvature None
+Independent 23 one coefficient, 8 closed intervals; curvature None
+Independent 24 one coefficient, 8 closed intervals; curvature None
+Independent 25 one coefficient, 8 closed intervals; curvature None
+Independent 26 one coefficient, 8 closed intervals; curvature None
+Independent 27 one coefficient, 8 closed intervals; curvature None

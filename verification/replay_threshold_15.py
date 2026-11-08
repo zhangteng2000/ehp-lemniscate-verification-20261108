@@ -1,4 +1,8 @@
 """Replay all scalar verifications for arbitrary degrees n >= 15."""
+
+if not __debug__:
+    raise RuntimeError('Verification requires assertions: do not run Python with -O or -OO.')
+
 from pathlib import Path
 import subprocess,sys,json
 
