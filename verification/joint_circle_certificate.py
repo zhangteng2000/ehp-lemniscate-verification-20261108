@@ -53,5 +53,7 @@ if __name__=='__main__':
     assert __debug__;res={'nonlinear_bound':verify_nonlinear()}
     for n in range(9,15):
         vals=run(n);res[str(n)]=vals;print(n,len(vals),'complete diameter intervals',flush=True)
-    Path(__file__).with_name('joint_circle_intervals.json').write_text(json.dumps(res,separators=(',',':'))+'\n')
+    record = Path(__file__).with_name('joint_circle_intervals.json')
+    record.write_text(json.dumps(res, separators=(',', ':')) + '\n',
+                      encoding='utf-8', newline='\n')
 

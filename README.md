@@ -11,6 +11,11 @@ check, signed short-arc estimates, and shorter finite circle comparisons.
 The archived low-degree
 sources remain in `prior/` for comparison.
 
+The degree 9--14 circle record includes the exact bound 15/16 for the ninth
+nonlinear coefficient. The default replay and the high-degree replay rebuild
+this record and compare its SHA-256 with the entry in
+`audit/code_and_data_sha256.json`.
+
 ## Reproduce the checks
 
 Use a 64-bit Python 3.12 interpreter, with assertions enabled. The complete
