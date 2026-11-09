@@ -3,7 +3,8 @@
     "n": 9,
     "tau": "1/320",
     "rows": 1,
-    "curvature_upper_display": 0.7551476594231701,
+    "R9_upper": "9/10",
+    "curvature_upper_display": 0.7508432721466523,
     "intervals": [
       [
         "640/102401",
@@ -51,26 +52,10 @@
       ],
       [
         "172375/614406",
-        "275416/921609"
-      ],
-      [
-        "275416/921609",
-        "584539/1843218"
-      ],
-      [
-        "584539/1843218",
         "34347/102401"
       ],
       [
         "34347/102401",
-        "651953/1843218"
-      ],
-      [
-        "651953/1843218",
-        "342830/921609"
-      ],
-      [
-        "342830/921609",
         "239789/614406"
       ],
       [
@@ -91,6 +76,7 @@
     "n": 10,
     "tau": "1/800",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": 0.4981330910513148,
     "intervals": [
       [
@@ -139,6 +125,7 @@
     "n": 11,
     "tau": "1/968",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": 0.45046884515347974,
     "intervals": [
       [
@@ -179,6 +166,7 @@
     "n": 12,
     "tau": "1/1152",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": 0.44884340754549706,
     "intervals": [
       [
@@ -219,6 +207,7 @@
     "n": 13,
     "tau": "1/1352",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": 0.41218477685920724,
     "intervals": [
       [
@@ -259,6 +248,7 @@
     "n": 14,
     "tau": "1/1568",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": 0.4162913542897644,
     "intervals": [
       [
@@ -299,6 +289,7 @@
     "n": 15,
     "tau": "1/28800",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "intervals": [
       [
@@ -411,6 +402,7 @@
     "n": 16,
     "tau": "1/32768",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "intervals": [
       [
@@ -483,6 +475,7 @@
     "n": 17,
     "tau": "1/36992",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "intervals": [
       [
@@ -547,6 +540,7 @@
     "n": 18,
     "tau": "1/41472",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "intervals": [
       [
@@ -595,6 +589,7 @@
     "n": 19,
     "tau": "1/46208",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "intervals": [
       [
@@ -643,6 +638,7 @@
     "n": 20,
     "tau": "1/51200",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "intervals": [
       [
@@ -683,6 +679,7 @@
     "n": 21,
     "tau": "1/56448",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "intervals": [
       [
@@ -723,6 +720,7 @@
     "n": 22,
     "tau": "1/61952",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "intervals": [
       [
@@ -763,6 +761,7 @@
     "n": 23,
     "tau": "1/67712",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "intervals": [
       [
@@ -803,6 +802,7 @@
     "n": 24,
     "tau": "1/73728",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "intervals": [
       [
@@ -843,6 +843,7 @@
     "n": 25,
     "tau": "1/80000",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "intervals": [
       [
@@ -883,6 +884,7 @@
     "n": 26,
     "tau": "1/86528",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "intervals": [
       [
@@ -923,6 +925,7 @@
     "n": 27,
     "tau": "1/93312",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "intervals": [
       [

@@ -1,6 +1,7 @@
 {
-  "status": "all elementary rational inequalities passed",
-  "R9_upper": "15/16",
-  "positivity_lower": "411311/30740480",
+  "R9_upper": "9/10",
+  "signed_arc_upper_constant": "9/20",
+  "quadratic_and_diagonal_upper": "23/40",
+  "remaining_square_upper": "5/48",
   "parameter_subdivisions": 0
 }

@@ -1,47 +1,56 @@
-"""Exact scalar algebra for the nonlinear ninth coefficient: |R9|<15/16.
-
-The proof shares the quadratic budget with the cubic and quartic terms.
-One univariate cubic remains; a quadratic lower bound proves its positivity.
-No adaptive parameter cover or floating arithmetic is used.
-"""
-
-if not __debug__:
-    raise RuntimeError('Verification requires assertions: do not run Python with -O or -OO.')
-
-from fractions import Fraction as F
+"""Exact proof constants for |R_9| < 9/10 on the area-theorem ball."""
+from fractions import Fraction as Q
+from itertools import product
 from pathlib import Path
 import json
 
+if not __debug__:
+    raise RuntimeError("Run without -O or -OO.")
+
+
 def verify():
-    # a=sqrt(12)/8 < 7/16; 5sqrt(2)/24 <5/16;
-    # max (11sqrt(2)/32)(1-t)^(3/2)sqrt(t)=33sqrt(6)/512 <1/6.
-    assert F(12,64)<F(7,16)**2
-    assert 2<F(3,2)**2
-    assert F(33,512)**2*6<F(1,6)**2
-    # Completing the ellipse yields the bound
-    # 7/16 +21s/160+s sqrt(623/800-45s/64).
-    assert F(9,5)*(F(25,64)+F(121,576*5))==F(623,800)
-    assert F(9,5)*F(25,64)==F(45,64)
-    assert -F(7,32)+F(1,6)+F(2,5)*F(11,24)==F(21,160)
-    p=[F(1,4),-F(21,160),-F(19495,25600),F(45,64)]
-    def value(s):return sum(q*s**i for i,q in enumerate(p))
-    def derivative(s):return sum(i*q*s**(i-1) for i,q in enumerate(p) if i)
-    # p' < 0 for 0<=s<=1/2: bound its quadratic term by a linear term.
-    assert 2*p[2]+3*p[3]/2==-F(1199,2560)
-    assert value(F(1,2))==F(1677,20480)>0
-    # On [1/2,1], p'' >=1501/2560. Use Taylor's theorem at 3/4.
-    second_lower=2*p[2]+6*p[3]/2
-    assert second_lower==F(1501,2560)>0
-    assert value(F(3,4))==F(325,16384)
-    assert derivative(F(3,4))==-F(891,10240)
-    lower=value(F(3,4))-derivative(F(3,4))**2/(2*second_lower)
-    assert lower==F(411311,30740480)>0
-    assert F(1,2)-F(21,160)>0
-    out={'status':'all elementary rational inequalities passed',
-         'R9_upper':'15/16','positivity_lower':'411311/30740480',
-         'parameter_subdivisions':0}
-    Path(__file__).with_suffix('.json').write_text(json.dumps(out,indent=2)+'\n',encoding='utf-8')
-    print('Nonic nonlinear coefficient: |R9|<15/16 by a quadratic lower bound.')
+    # Expand sqrt(1-Z)-1-log(1-Z)/2 where Z=sum j*a_j*t^(j+1).
+    # Derive each coefficient using the binomial recurrence.
+    binom = Q(1)
+    terms = {}
+    for k in range(1, 5):
+        binom *= (Q(1, 2)-k+1)/k
+        weight = (-1)**k*binom + Q(1, 2*k)
+        for js in product(range(1, 7), repeat=k):
+            if sum(js)+k != 9 or not weight:
+                continue
+            coef = weight
+            for j in js:
+                coef *= j
+            key = tuple(sorted(js))
+            terms[key] = terms.get(key, 0)+coef
+    assert terms == {(1,6):Q(3,2), (2,5):Q(5,2), (3,4):Q(3),
+                     (1,1,4):Q(5,4), (1,2,3):Q(15,4), (2,2,2):Q(5,6),
+                     (1,1,1,2):Q(11,16)}
+    # y_j = sqrt(j)|a_j|. Pair high and low indices by Young's inequality.
+    a, b = Q(11,40), Q(23,40)
+    assert 4*a*b > Q(10,16) >= Q(6,16)
+    assert b*b > Q(12,64)
+    assert Q(5,24)**2*2 < Q(3,10)**2
+    assert Q(11,64)**2*2 < Q(3,10)**2
+    assert a+Q(3,10) == b
+    # u(6s-5u) = 9s^2/5 - 5(u-3s/5)^2,
+    # and 4/27-s^2(1-s) = (s-2/3)^2(s+1/3).
+    assert (5*Q(3,5)**2, 10*Q(3,5)) == (Q(9,5), 6)
+    y = Q(2,3)
+    assert (y*y/3, y*y-2*y/3, Q(1,3)-2*y) == (Q(4,27), 0, -1)
+    square = Q(5,8)**2*Q(9,5)*Q(4,27)
+    assert square == Q(15,144) < Q(13,40)**2
+    upper = b+Q(13,40)
+    assert upper == Q(9,10)
+    out = {"R9_upper":str(upper), "signed_arc_upper_constant":str(upper/2),
+           "quadratic_and_diagonal_upper":str(b), "remaining_square_upper":str(square),
+           "parameter_subdivisions":0}
+    Path(__file__).with_suffix(".json").write_text(
+        json.dumps(out, indent=2)+"\n", encoding="utf-8", newline="\n")
+    print("Nonic: |R9| < 9/10; signed short-arc constant 9/20.")
     return out
 
-if __name__=='__main__':assert __debug__;verify()
+
+if __name__ == "__main__":
+    verify()

@@ -64,7 +64,7 @@ def circle(n):
             for m,(normlo,normhi,coef) in enumerate(data,1):
                 err=sum(coef[k]*h**k*cmax**(m-k) for k in coef)
                 gain+=max(Q(0),normlo*cmin**m-err)**2/normhi
-            if n==9:gain=max(gain,(Il-1)*max(Q(0),b*cmin-Q(17,16)*h)**2)
+            if n==9:gain=max(gain,(Il-1)*max(Q(0),b*cmin-Q(9,10)*h)**2)
         if gap-2*PLO*gain<L*root_floor(l,n):
             count+=1;continue
         assert h-l>Q(1,2**28),(n,float(l),float(h))
@@ -73,16 +73,13 @@ def circle(n):
     return count
 
 def nonlinear():
-    # An independent nonnegative simple-ball polynomial bound, with room to spare:
-    # y_s=sqrt(s)|a_s|, m=9; Cauchy-Schwarz first on indices 3 and 4.
-    # Verify the one-dimensional remaining comparison by interval ranges on 128 pieces.
-    tops=[]
-    for i in range(128):
-        a=Q(i,128);b=Q(i+1,128);m=min(b,max(a,Q(2,5)))
-        v=4*upper_sqrt((1-m)*(1+5*m)/3)+upper_sqrt(8*b**3)
-        tops.append(v)
-    assert max(tops)<Q(9,2)
-    assert upper_sqrt(12)/8+Q(5,48)*max(tops)+33*upper_sqrt(6)/512<Q(17,16)
+    # Independent bounds using rational upper square roots.
+    a, b = Q(11,40), Q(23,40)
+    assert upper_sqrt(Q(10))/4 < 2*root_floor(a*b,2)
+    assert upper_sqrt(Q(12))/8 < b
+    assert max(5*upper_sqrt(Q(2))/24, 11*upper_sqrt(Q(2))/64) < b-a
+    cross = Q(5,8)*upper_sqrt(Q(9,5))*upper_sqrt(Q(4,27))
+    assert b+cross < Q(9,10)
 
 def strips():
     m=8;n=9;U=Q(12,25)
@@ -124,8 +121,8 @@ def strips():
 if __name__=='__main__':
     assert __debug__;l,h=atan_inv(5);ll,hh=atan_inv(239)
     assert PLO<16*l-4*hh<16*h-4*ll<PHI
-    nonlinear();res={'nonic_independent_strip_area':strips()}
+    nonlinear();res={'nonic_independent_strip_area':strips(),'R9_upper':'9/10'}
     for n in range(9,15):res[str(n)]=circle(n);print(n,res[str(n)],flush=True)
     print('nonic independent strip area',res['nonic_independent_strip_area'])
-    (G/'low_degree_transfer_independent.json').write_text(json.dumps(res,indent=1)+'\n')
+    (G/'low_degree_transfer_independent.json').write_text(json.dumps(res,indent=1)+'\n', encoding='utf-8', newline='\n')
 

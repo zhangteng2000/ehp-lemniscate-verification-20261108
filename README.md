@@ -11,8 +11,9 @@ check, signed short-arc estimates, and shorter finite circle comparisons.
 The archived low-degree
 sources remain in `prior/` for comparison.
 
-The degree 9--14 circle record includes the exact bound 15/16 for the ninth
-nonlinear coefficient. The default replay and the high-degree replay rebuild
+The degree 9--14 certificate and both one-coefficient verifiers use the
+same bound, 9/10, for the ninth nonlinear coefficient (9/20 in the signed
+short-arc estimate). The record names the bound actually used. The default replay and the high-degree replay rebuild
 this record and compare its SHA-256 with the entry in
 `audit/code_and_data_sha256.json`.
 
@@ -54,15 +55,16 @@ certificate inputs or their recorded hashes.
 The `--part earlier`, `--part high`, and `--part extension` options replay
 the current quartic/quintic, degree-at-least-eight, and degree-six/seven
 parts separately. The `--part archival-quartic` option replays the superseded
-two-parameter quartic proof. The revised manuscript cites Dahlke's direct
-cubic proof, so the older cubic computation is not part of the main replay.
+two-parameter quartic proof. The cubic proof is given in the manuscript and follows Dahlke's
+Chebyshev--Joukowski reduction. Its analytic argument does not require a program.
 
 ## What each directory verifies
 
-* `verification/audit_cubic_literature.py`: exact rational audit of
-  the elementary constants in the imported direct cubic proof, together
-  with its Laurent-polynomial identities and final strict sign. This
-  supplements primary-text review of the branch coverage and integrals.
+* `verification/audit_cubic_comparison.py`: exact Laurent identities and
+  rational bounds for the cubic proof in the manuscript. It checks the
+  uniform small-ray majorant and the final strict sign without parameter
+  samples. `audit_cubic_literature.py` is the older audit of the estimates
+  in [Dahlke's preprint](https://doi.org/10.5281/zenodo.20318611).
 * `verification/inverse_beta_moment_audit.py`: the rational endpoints
   in the inverse-beta moment lemma, which replaces the three-event
   probability estimate for recovery of high coefficients. The centered
@@ -109,8 +111,8 @@ cubic proof, so the older cubic computation is not part of the main replay.
 * `verification/audit_octic_majorant_exact.py` and
   `audit_nonic_majorant_exact.py`: elementary rational inequalities for
   the nonlinear inverse coefficients in degrees eight and nine. The
-  degree-nine bound is 15/16; its proof shares the quadratic area budget
-  with the cubic and quartic terms.
+  degree-nine bound is 9/10. The audit reconstructs the degree-nine
+  coefficient and checks the Young and Cauchy--Schwarz bounds in the paper.
 * `verification/audit_inverse_coefficients.py` and
   `audit_common_identities.py`: symbolic checks of the inverse logarithm,
   resultant signs, nonlinear coefficients, cubic discriminant, and row

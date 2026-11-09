@@ -24,14 +24,14 @@ def run(n):
     if n<=14:
         U=I(2*PLO*(1+(n-1)*Il/4),2*PHI*(1+(n-1)*Ih/4))
         c=(x,b,None,I(Il,Ih),U,None)
-        hn=Q(15,32)+Q(4,9)*t if n==9 else None
+        hn=Q(9,20)+Q(4,9)*t if n==9 else None
         goal=Q(4,5) if n==9 else Q(5,8)
         loss=curvature(n,goal,t,c,hn_bound=hn)
     start=2*t/(1+t*t);stack=[(start,Q(1,2)),(Q(1,2),Q(1))];done=[]
     while stack:
         lo,hi=stack.pop();gain=Q(0)
         if hi<=Q(1,2):
-            c=root_floor(1-hi*hi,2);K=Q(15,16) if n==9 else H
+            c=root_floor(1-hi*hi,2);K=Q(9,10) if n==9 else H
             gain=2*PLO*(Il-1)*max(0,b*c-K*hi)**2
         if gain+L*root_floor(lo,n)>gap:done.append((lo,hi));continue
         assert hi-lo>Q(1,2**28),(n,str(lo),str(hi))
@@ -39,7 +39,7 @@ def run(n):
         stack.extend(((lo,a),(a,z),(z,hi)))
     done.sort();assert done[0][0]==start and done[-1][1]==1 and all(a[1]==b[0] for a,b in zip(done,done[1:]))
     print('Independent',n,'one coefficient,',len(done),'closed intervals; curvature',loss,flush=True)
-    return {'n':n,'tau':str(t),'rows':1,'curvature_upper_display':loss,
+    return {'n':n,'tau':str(t),'rows':1,'R9_upper':('9/10' if n==9 else None),'curvature_upper_display':loss,
             'intervals':[[str(a),str(b)] for a,b in done]}
 
 if __name__=='__main__':
@@ -47,4 +47,4 @@ if __name__=='__main__':
     assert PLO<16*a-4*d<16*b-4*c<PHI
     p=argparse.ArgumentParser();p.add_argument('--n',type=int,nargs='+',default=list(range(9,28)));a=p.parse_args()
     out={str(n):run(n) for n in a.n}
-    Path(__file__).with_suffix('.json').write_text(json.dumps(out,indent=2)+'\n',encoding='utf-8')
+    Path(__file__).with_suffix('.json').write_text(json.dumps(out,indent=2)+'\n',encoding='utf-8', newline='\n')

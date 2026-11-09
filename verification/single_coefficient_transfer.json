@@ -4,8 +4,9 @@
     "tau": "1/320",
     "line_constant": "41/50",
     "rows": 1,
-    "curvature_upper_display": 0.7548462508468387,
-    "minimum_margin_lower": "41233108958428092213/1208925819614629174706176",
+    "R9_upper": "9/10",
+    "curvature_upper_display": 0.7505418635703207,
+    "minimum_margin_lower": "595313804676780593813/1208925819614629174706176",
     "intervals": [
       [
         "640/102401",
@@ -41,10 +42,6 @@
       ],
       [
         "103681/409604",
-        "930569/3276832"
-      ],
-      [
-        "930569/3276832",
         "515845/1638416"
       ],
       [
@@ -70,6 +67,7 @@
     "tau": "1/800",
     "line_constant": "7/8",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": 0.4979646833812393,
     "minimum_margin_lower": "96890059789853346415/604462909807314587353088",
     "intervals": [
@@ -112,6 +110,7 @@
     "tau": "1/968",
     "line_constant": "7/8",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": 0.45032646261793513,
     "minimum_margin_lower": "14607058117353449754841/1208925819614629174706176",
     "intervals": [
@@ -154,6 +153,7 @@
     "tau": "1/1152",
     "line_constant": "7/8",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": 0.4486542971773181,
     "minimum_margin_lower": "3940927611474888480191/1208925819614629174706176",
     "intervals": [
@@ -188,6 +188,7 @@
     "tau": "1/1352",
     "line_constant": "7/8",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": 0.41188089249014437,
     "minimum_margin_lower": "7427258848937946674385/604462909807314587353088",
     "intervals": [
@@ -222,6 +223,7 @@
     "tau": "1/1568",
     "line_constant": "7/8",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": 0.4154566245375164,
     "minimum_margin_lower": "12204367418356260922883/604462909807314587353088",
     "intervals": [
@@ -256,6 +258,7 @@
     "tau": "1/28800",
     "line_constant": "49/60",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "minimum_margin_lower": "114247136714812501699/604462909807314587353088",
     "intervals": [
@@ -342,6 +345,7 @@
     "tau": "1/32768",
     "line_constant": "49/60",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "minimum_margin_lower": "163075974505029507401/604462909807314587353088",
     "intervals": [
@@ -396,6 +400,7 @@
     "tau": "1/36992",
     "line_constant": "49/60",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "minimum_margin_lower": "2215557432894546842433/604462909807314587353088",
     "intervals": [
@@ -446,6 +451,7 @@
     "tau": "1/41472",
     "line_constant": "49/60",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "minimum_margin_lower": "1453505801701328307193/604462909807314587353088",
     "intervals": [
@@ -492,6 +498,7 @@
     "tau": "1/46208",
     "line_constant": "49/60",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "minimum_margin_lower": "6364819743643475069191/1208925819614629174706176",
     "intervals": [
@@ -538,6 +545,7 @@
     "tau": "1/51200",
     "line_constant": "49/60",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "minimum_margin_lower": "4890203770887370823969/1208925819614629174706176",
     "intervals": [
@@ -580,6 +588,7 @@
     "tau": "1/56448",
     "line_constant": "49/60",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "minimum_margin_lower": "3936866414863284336173/1208925819614629174706176",
     "intervals": [
@@ -614,6 +623,7 @@
     "tau": "1/61952",
     "line_constant": "49/60",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "minimum_margin_lower": "1949902421759860321781/302231454903657293676544",
     "intervals": [
@@ -648,6 +658,7 @@
     "tau": "1/67712",
     "line_constant": "49/60",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "minimum_margin_lower": "11349345852929921811025/1208925819614629174706176",
     "intervals": [
@@ -682,6 +693,7 @@
     "tau": "1/73728",
     "line_constant": "49/60",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "minimum_margin_lower": "14622511785732707357213/1208925819614629174706176",
     "intervals": [
@@ -716,6 +728,7 @@
     "tau": "1/80000",
     "line_constant": "49/60",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "minimum_margin_lower": "17650119929391201292129/1208925819614629174706176",
     "intervals": [
@@ -750,6 +763,7 @@
     "tau": "1/86528",
     "line_constant": "49/60",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "minimum_margin_lower": "20458727802426752001713/1208925819614629174706176",
     "intervals": [
@@ -784,6 +798,7 @@
     "tau": "1/93312",
     "line_constant": "49/60",
     "rows": 1,
+    "R9_upper": null,
     "curvature_upper_display": null,
     "minimum_margin_lower": "11535603775420118435647/604462909807314587353088",
     "intervals": [

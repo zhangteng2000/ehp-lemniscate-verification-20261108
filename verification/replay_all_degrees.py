@@ -11,6 +11,11 @@ def call(args,site=False):
     subprocess.run([sys.executable,*([] if site else ['-S']),'-B',*map(str,args)],check=True,cwd=G)
 def verify_joint_circle_record():
     relative_path = 'verification/joint_circle_intervals.json'
+    result = json.loads((G.parent / relative_path).read_text(encoding='utf-8'))
+    assert result['nonlinear_bound']['R9_upper'] == '9/10'
+    for f in ('single_coefficient_transfer', 'independent_single_coefficient_transfer'):
+        record = json.loads((G/(f+'.json')).read_text(encoding='utf-8'))
+        assert record['9']['R9_upper'] == '9/10'
     manifest_path = G.parent / 'audit' / 'code_and_data_sha256.json'
     manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
     digest = sha256((G.parent / relative_path).read_bytes()).hexdigest()
@@ -24,7 +29,7 @@ if __name__=='__main__':
     p.add_argument('--part',choices=['all','earlier','high','extension','archival-quartic'],default='all')
     a=p.parse_args();assert __debug__ and sys.flags.optimize==0
     if a.part=='all':
-        call(['audit_cubic_literature.py'])
+        call(['audit_cubic_comparison.py'])
         call(['audit_common_identities.py'],True)
         call(['audit_inverse_coefficients.py'],True)
         call(['audit_stationary_identity.py'],True)
